@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/scratch/mm24r002/paper_rerun_20260815/diagnostics/inspect_day6_checkpoint.py", line 113, in <module>
+    main()
+  File "/scratch/mm24r002/paper_rerun_20260815/diagnostics/inspect_day6_checkpoint.py", line 95, in main
+    specification.loader.exec_module(runner)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 240, in <module>
+    raise RuntimeError("CUDA is required for the DGX rerun.")
+RuntimeError: CUDA is required for the DGX rerun.

@@ -1,0 +1,59 @@
+Traceback (most recent call last):
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/urllib/request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/http/client.py", line 1283, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/http/client.py", line 1329, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/http/client.py", line 1448, in connect
+    super().connect()
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/http/client.py", line 942, in connect
+    self.sock = self._create_connection(
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/socket.py", line 824, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/scratch/mm24r002/paper_rerun_20260815/diagnostics/inspect_day6_checkpoint.py", line 121, in <module>
+    main()
+  File "/scratch/mm24r002/paper_rerun_20260815/diagnostics/inspect_day6_checkpoint.py", line 101, in main
+    specification.loader.exec_module(runner)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 347, in <module>
+    ensure_cifar10_available()
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 335, in ensure_cifar10_available
+    datasets.CIFAR10(root=str(DATA_ROOT), train=True, download=True)
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torchvision/datasets/cifar.py", line 65, in __init__
+    self.download()
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torchvision/datasets/cifar.py", line 139, in download
+    download_and_extract_archive(self.url, self.root, filename=self.filename, md5=self.tgz_md5)
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torchvision/datasets/utils.py", line 378, in download_and_extract_archive
+    download_url(url, download_root, filename, md5)
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torchvision/datasets/utils.py", line 130, in download_url
+    url = _get_redirect_url(url, max_hops=max_redirect_hops)
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torchvision/datasets/utils.py", line 78, in _get_redirect_url
+    with urllib.request.urlopen(urllib.request.Request(url, headers=headers)) as response:
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/urllib/request.py", line 519, in open
+    response = self._open(req, data)
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/urllib/request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/urllib/request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/urllib/request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno -2] Name or service not known>

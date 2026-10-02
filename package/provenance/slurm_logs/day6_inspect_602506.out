@@ -1,0 +1,289 @@
+output:      /scratch/mm24r002/paper_rerun_20260815/diagnostics/import_scratch
+config hash: b14808a01c23259a
+run days:    [1, 2, 3, 4, 5, 6, 7, 10]
+seeds:       (42,)
+{
+  "created_utc": "2026-08-15T08:07:46Z",
+  "config": {
+    "output_root": "/scratch/mm24r002/paper_rerun_20260815/diagnostics/import_scratch",
+    "data_root": "/scratch/mm24r002/paper_rerun_20260815/data",
+    "model_architecture": "torchvision_resnet50_standard_stem_cifar10_head",
+    "model_num_classes": 10,
+    "model_parameter_count": 23528522,
+    "seeds": [
+      42
+    ],
+    "split_seed": 20260815,
+    "train_size": 45000,
+    "validation_size": 5000,
+    "test_size": 10000,
+    "batch_size": 128,
+    "loader_workers": 0,
+    "learning_rate": 0.1,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "nesterov": true,
+    "lr_milestones": [
+      100,
+      150
+    ],
+    "lr_gamma": 0.1,
+    "temperature": 0.1,
+    "use_bfloat16_amp": true,
+    "deterministic": true,
+    "n_workers": 8,
+    "day1_epochs": 2,
+    "day3_epochs": 2,
+    "day4_epochs": 1,
+    "day4_benchmark_warmup": 0,
+    "day4_benchmark_runs": 1,
+    "day5_epochs": 2,
+    "day6_epochs": 2,
+    "day7_epochs": 2,
+    "day10_epochs": 2,
+    "gaussian_covariance": 30.0,
+    "mean_shift_scale": 1.0,
+    "majority_scale": 5.0,
+    "save_checkpoints": false,
+    "checkpoint_interval": 1
+  },
+  "config_hash": "b14808a01c23259a",
+  "run_days": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    10
+  ],
+  "smoke_test": true,
+  "python": "3.10.13",
+  "platform": "Linux-4.18.0-513.5.1.el8_9.x86_64-x86_64-with-glibc2.28",
+  "torch": "2.2.1",
+  "torchvision": "0.17.1",
+  "cuda_runtime": "11.8",
+  "cudnn": 8700,
+  "numpy": "1.26.4",
+  "gpus": [],
+  "scope_note": "Algorithm-level DGX simulation; no real blockchain/network/VRF proof execution."
+}
+Files already downloaded and verified
+Files already downloaded and verified
+{
+  "checkpoint": "/scratch/mm24r002/paper_rerun_20260815/diagnostics/day6_zero_activation_activation_norm_seed42_latest.pt",
+  "epoch": 1,
+  "config_hash": "6464fc660a21f144",
+  "model": {
+    "name": "state_dict",
+    "tensor_count": 320,
+    "nonfinite_tensor_count": 0,
+    "nonfinite_value_count": 0,
+    "failures": [],
+    "largest_tensor_magnitudes": [
+      {
+        "name": "stages.0.10.bn1.running_var",
+        "maximum_absolute_value": 13.561537742614746
+      },
+      {
+        "name": "stages.0.11.bn1.running_var",
+        "maximum_absolute_value": 13.135089874267578
+      },
+      {
+        "name": "stages.0.7.bn1.running_var",
+        "maximum_absolute_value": 8.755386352539062
+      },
+      {
+        "name": "stages.0.6.bn1.running_var",
+        "maximum_absolute_value": 8.484976768493652
+      },
+      {
+        "name": "stages.0.3.bn1.running_var",
+        "maximum_absolute_value": 7.911546230316162
+      },
+      {
+        "name": "stages.0.8.bn1.running_var",
+        "maximum_absolute_value": 7.707248687744141
+      },
+      {
+        "name": "stages.0.9.bn1.running_var",
+        "maximum_absolute_value": 6.83090353012085
+      },
+      {
+        "name": "stages.0.7.bn1.running_mean",
+        "maximum_absolute_value": 6.11425256729126
+      },
+      {
+        "name": "stages.0.10.bn1.running_mean",
+        "maximum_absolute_value": 5.812184810638428
+      },
+      {
+        "name": "stages.0.2.bn1.running_var",
+        "maximum_absolute_value": 5.20977783203125
+      },
+      {
+        "name": "stages.0.8.bn1.running_mean",
+        "maximum_absolute_value": 5.124173641204834
+      },
+      {
+        "name": "stages.0.11.bn1.running_mean",
+        "maximum_absolute_value": 5.083800792694092
+      },
+      {
+        "name": "stages.0.4.bn1.running_var",
+        "maximum_absolute_value": 5.007180690765381
+      },
+      {
+        "name": "stages.0.5.bn1.running_var",
+        "maximum_absolute_value": 4.456974983215332
+      },
+      {
+        "name": "stages.0.6.bn1.running_mean",
+        "maximum_absolute_value": 4.161299705505371
+      },
+      {
+        "name": "stages.0.3.bn1.running_mean",
+        "maximum_absolute_value": 3.9050328731536865
+      },
+      {
+        "name": "stages.0.4.bn1.running_mean",
+        "maximum_absolute_value": 3.6016952991485596
+      },
+      {
+        "name": "stages.0.5.bn1.running_mean",
+        "maximum_absolute_value": 3.5053462982177734
+      },
+      {
+        "name": "stages.0.2.bn1.running_mean",
+        "maximum_absolute_value": 3.3578407764434814
+      },
+      {
+        "name": "stages.0.8.downsample.1.running_mean",
+        "maximum_absolute_value": 3.26309871673584
+      }
+    ]
+  },
+  "validation_best": {
+    "name": "best_state",
+    "tensor_count": 320,
+    "nonfinite_tensor_count": 0,
+    "nonfinite_value_count": 0,
+    "failures": [],
+    "largest_tensor_magnitudes": [
+      {
+        "name": "stages.0.10.bn1.running_var",
+        "maximum_absolute_value": 13.561537742614746
+      },
+      {
+        "name": "stages.0.11.bn1.running_var",
+        "maximum_absolute_value": 13.135089874267578
+      },
+      {
+        "name": "stages.0.7.bn1.running_var",
+        "maximum_absolute_value": 8.755386352539062
+      },
+      {
+        "name": "stages.0.6.bn1.running_var",
+        "maximum_absolute_value": 8.484976768493652
+      },
+      {
+        "name": "stages.0.3.bn1.running_var",
+        "maximum_absolute_value": 7.911546230316162
+      },
+      {
+        "name": "stages.0.8.bn1.running_var",
+        "maximum_absolute_value": 7.707248687744141
+      },
+      {
+        "name": "stages.0.9.bn1.running_var",
+        "maximum_absolute_value": 6.83090353012085
+      },
+      {
+        "name": "stages.0.7.bn1.running_mean",
+        "maximum_absolute_value": 6.11425256729126
+      },
+      {
+        "name": "stages.0.10.bn1.running_mean",
+        "maximum_absolute_value": 5.812184810638428
+      },
+      {
+        "name": "stages.0.2.bn1.running_var",
+        "maximum_absolute_value": 5.20977783203125
+      },
+      {
+        "name": "stages.0.8.bn1.running_mean",
+        "maximum_absolute_value": 5.124173641204834
+      },
+      {
+        "name": "stages.0.11.bn1.running_mean",
+        "maximum_absolute_value": 5.083800792694092
+      },
+      {
+        "name": "stages.0.4.bn1.running_var",
+        "maximum_absolute_value": 5.007180690765381
+      },
+      {
+        "name": "stages.0.5.bn1.running_var",
+        "maximum_absolute_value": 4.456974983215332
+      },
+      {
+        "name": "stages.0.6.bn1.running_mean",
+        "maximum_absolute_value": 4.161299705505371
+      },
+      {
+        "name": "stages.0.3.bn1.running_mean",
+        "maximum_absolute_value": 3.9050328731536865
+      },
+      {
+        "name": "stages.0.4.bn1.running_mean",
+        "maximum_absolute_value": 3.6016952991485596
+      },
+      {
+        "name": "stages.0.5.bn1.running_mean",
+        "maximum_absolute_value": 3.5053462982177734
+      },
+      {
+        "name": "stages.0.2.bn1.running_mean",
+        "maximum_absolute_value": 3.3578407764434814
+      },
+      {
+        "name": "stages.0.8.downsample.1.running_mean",
+        "maximum_absolute_value": 3.26309871673584
+      }
+    ]
+  },
+  "optimizer_nonfinite_tensor_count": 0,
+  "optimizer_failures": [],
+  "clean_random_forward": {
+    "output_is_finite": true,
+    "output_maximum_absolute_value": 9.438498042045803e+33,
+    "activation_stats": [
+      {
+        "stage": 0,
+        "rms": 2.5376102924346924,
+        "mean": 1.7294334173202515,
+        "std": 1.8570209741592407
+      },
+      {
+        "stage": 1,
+        "rms": Infinity,
+        "mean": 4.3113254781543304e+20,
+        "std": 6.142247018163203e+20
+      },
+      {
+        "stage": 2,
+        "rms": Infinity,
+        "mean": 5.74510702968797e+33,
+        "std": 8.37639191109042e+33
+      },
+      {
+        "stage": 3,
+        "rms": Infinity,
+        "mean": -2.504644079611071e+33,
+        "std": 4.8545230619057527e+33
+      }
+    ]
+  }
+}
+day6_checkpoint_inspection_complete=true

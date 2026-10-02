@@ -1,0 +1,4 @@
+configuration,total_sec_mean,total_sec_sd,commit_reveal_sec_mean
+tdml_reconstruction,12.90512478351593,0.24275919900653103,0.0
+ours_without_commit_reveal,13.102696554114422,0.28059269412203575,0.0
+ours_with_commit_reveal,17.149302802152103,0.5089592670877064,3.980676872241828

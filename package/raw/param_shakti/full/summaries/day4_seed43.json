@@ -1,0 +1,18 @@
+{
+  "config_hash": "7e267c0bf303542b",
+  "configurations": [
+    "tdml_reconstruction",
+    "ours_without_commit_reveal",
+    "ours_with_commit_reveal"
+  ],
+  "epochs_per_configuration": 5,
+  "model_architecture": "torchvision_resnet50_standard_stem_cifar10_head",
+  "model_parameter_count": 23528522,
+  "rows": 15,
+  "run_name": "day4_seed43",
+  "seed": 43,
+  "standalone_rows": 7,
+  "status": "complete",
+  "uses_test_during_timing": false,
+  "uses_validation_for_weighting": true
+}

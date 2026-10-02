@@ -1,0 +1,13 @@
+{
+  "best_validation_acc": 0.8986,
+  "best_validation_epoch": 198,
+  "config_hash": "7e267c0bf303542b",
+  "epochs": 200,
+  "rank_checkpoint_pattern": "/scratch/mm24r002/paper_rerun_20260815/results/full/checkpoints/day5_k2_seed43_rank*_validation_best.pt",
+  "run_name": "day5_k2_seed43",
+  "seed": 43,
+  "shards": 2,
+  "status": "complete",
+  "test_acc_at_validation_best": 0.8878,
+  "test_loss_at_validation_best": 0.4861649455070496
+}

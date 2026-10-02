@@ -1,0 +1,75 @@
+{
+  "config": {
+    "batch_size": 128,
+    "checkpoint_interval": 5,
+    "data_root": "/scratch/mm24r002/paper_rerun_20260815/data",
+    "day10_epochs": 30,
+    "day1_epochs": 200,
+    "day3_epochs": 50,
+    "day4_benchmark_runs": 5,
+    "day4_benchmark_warmup": 2,
+    "day4_epochs": 5,
+    "day5_epochs": 200,
+    "day6_epochs": 20,
+    "day7_epochs": 5,
+    "deterministic": true,
+    "gaussian_covariance": 30.0,
+    "learning_rate": 0.1,
+    "loader_workers": 2,
+    "lr_gamma": 0.1,
+    "lr_milestones": [
+      100,
+      150
+    ],
+    "majority_scale": 5.0,
+    "mean_shift_scale": 1.0,
+    "model_architecture": "torchvision_resnet50_standard_stem_cifar10_head",
+    "model_num_classes": 10,
+    "model_parameter_count": 23528522,
+    "momentum": 0.9,
+    "n_workers": 8,
+    "nesterov": true,
+    "output_root": "/scratch/mm24r002/paper_rerun_20260815/results/full",
+    "save_checkpoints": true,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "split_seed": 20260815,
+    "temperature": 0.1,
+    "test_size": 10000,
+    "train_size": 45000,
+    "use_bfloat16_amp": true,
+    "validation_size": 5000,
+    "weight_decay": 0.0005
+  },
+  "config_hash": "7e267c0bf303542b",
+  "created_utc": "2026-08-16T14:05:49Z",
+  "cuda_runtime": "11.8",
+  "cudnn": 8700,
+  "gpus": [
+    {
+      "compute_capability": "8.0",
+      "index": 0,
+      "name": "NVIDIA A100 80GB PCIe",
+      "total_memory_bytes": 84974239744
+    },
+    {
+      "compute_capability": "8.0",
+      "index": 1,
+      "name": "NVIDIA A100 80GB PCIe",
+      "total_memory_bytes": 84974239744
+    }
+  ],
+  "numpy": "1.26.4",
+  "platform": "Linux-4.18.0-513.5.1.el8_9.x86_64-x86_64-with-glibc2.28",
+  "python": "3.10.13",
+  "run_days": [
+    5
+  ],
+  "scope_note": "Algorithm-level DGX simulation; no real blockchain/network/VRF proof execution.",
+  "smoke_test": false,
+  "torch": "2.2.1",
+  "torchvision": "0.17.1"
+}

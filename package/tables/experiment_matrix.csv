@@ -1,0 +1,9 @@
+day,expected_primary_csvs,available_primary_csvs,available_rows,status
+1,3,3,600,complete
+2,18,18,3600,complete
+3,75,75,3750,complete
+4,3,3,45,complete
+5,9,6,1200,partial_k8_cancelled
+6,21,21,420,complete
+7,3,3,45,complete
+10,6,6,180,complete

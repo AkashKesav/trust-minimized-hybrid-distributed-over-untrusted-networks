@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/scratch/mm24r002/paper_rerun_20260815/diagnostics/inspect_day6_checkpoint.py", line 111, in <module>
+    main()
+  File "/scratch/mm24r002/paper_rerun_20260815/diagnostics/inspect_day6_checkpoint.py", line 93, in main
+    specification.loader.exec_module(runner)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 80, in <module>
+    class ExperimentConfig:
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/dataclasses.py", line 1175, in wrap
+    return _process_class(cls, init, repr, eq, order, unsafe_hash,
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/dataclasses.py", line 944, in _process_class
+    and _is_type(type, cls, dataclasses, dataclasses.KW_ONLY,
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/dataclasses.py", line 711, in _is_type
+    ns = sys.modules.get(cls.__module__).__dict__
+AttributeError: 'NoneType' object has no attribute '__dict__'. Did you mean: '__dir__'?

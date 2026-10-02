@@ -1,0 +1,5 @@
+TEST 1 PASSED: split/reconstruct round-trip exact
+TEST 2 PASSED: N-replica aggregation and redistribution exact
+TEST 3 PASSED: checkpoint round-trip exact
+ALL HYBRID HARNESS TESTS PASSED
+hybrid_unit_tests_complete=true

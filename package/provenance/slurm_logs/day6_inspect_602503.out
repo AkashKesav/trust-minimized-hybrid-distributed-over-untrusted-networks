@@ -1,0 +1,4 @@
+output:      /home/mm24r002/dgx_results
+config hash: 82565739381e7c5a
+run days:    [1, 2, 3, 4, 5, 6, 7, 10]
+seeds:       (42, 43, 44)

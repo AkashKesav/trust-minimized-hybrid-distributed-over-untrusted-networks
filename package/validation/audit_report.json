@@ -1,0 +1,31 @@
+{
+  "checks": {
+    "accepted_job_completion_sentinels_present": true,
+    "day5_rank_manifests_present": true,
+    "figures_expected": 11,
+    "remote_and_local_notebook_hash_match": true,
+    "remote_and_local_runner_hash_match": true,
+    "strict_json_metrics": true
+  },
+  "completed_primary_csvs": 135,
+  "completed_primary_rows": 9840,
+  "corrections": [
+    "Day-2 headline accuracy changed from maximum test accuracy to final epoch.",
+    "Day-10 ablation changed from maximum/incorrectly validation-selected wording to final epoch.",
+    "Commit-Reveal incremental overhead separated from full-framework versus reconstruction overhead.",
+    "Day-9 event-level cumulative violation counts corrected in a derived CSV.",
+    "VRF seed-42 trace separated from five-trial aggregate statistics.",
+    "Activation results report validation-selected and final accuracy separately."
+  ],
+  "excluded": [
+    "Day-5 K=8 seeds 42-44 (cancelled before start)",
+    "Hybrid rank tests (cancelled/unvalidated)",
+    "Tau sensitivity (cancelled/unvalidated)",
+    "Smoke and failed superseded runs",
+    "18 locally padded Byzantine worker CSVs"
+  ],
+  "expected_primary_csvs": 138,
+  "expected_primary_rows": 10440,
+  "package_valid": true,
+  "qualification": "Valid for the 135 completed primary runs after corrected reporting; not a complete 138-run matrix."
+}

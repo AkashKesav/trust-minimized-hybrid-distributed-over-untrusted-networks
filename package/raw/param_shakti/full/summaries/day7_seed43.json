@@ -1,0 +1,14 @@
+{
+  "config_hash": "7e267c0bf303542b",
+  "configurations": [
+    "baseline",
+    "activation_detector",
+    "detector_plus_commit_reveal"
+  ],
+  "epochs_per_configuration": 5,
+  "rows": 15,
+  "run_name": "day7_seed43",
+  "seed": 43,
+  "standalone_rows": 4,
+  "status": "complete"
+}

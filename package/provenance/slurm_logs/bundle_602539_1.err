@@ -1,0 +1,16 @@
+/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at /opt/conda/conda-bld/pytorch_1708025831440/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+Traceback (most recent call last):
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 3058, in <module>
+    main()
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 3054, in main
+    run_specification_list(bundles[arguments.bundle_index], label)
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 2991, in run_specification_list
+    result = run_specification(specification, gpu_id=0)
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 2912, in run_specification
+    return run_federated_experiment(gpu_id=gpu_id, **payload)
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 1436, in run_federated_experiment
+    submitted_vectors = apply_update_attack(
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 941, in apply_update_attack
+    attacked[malicious] = -CFG.majority_scale * honest_mean
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2062288.48 GiB. GPU 0 has a total capacity of 79.14 GiB of which 73.87 GiB is free. Including non-PyTorch memory, this process has 5.26 GiB memory in use. Of the allocated memory 4.30 GiB is allocated by PyTorch, and 223.59 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

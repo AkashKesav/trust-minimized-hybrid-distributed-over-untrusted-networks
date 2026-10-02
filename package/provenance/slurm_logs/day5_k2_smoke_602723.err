@@ -1,0 +1,20 @@
+/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at /opt/conda/conda-bld/pytorch_1708025831440/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at /opt/conda/conda-bld/pytorch_1708025831440/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py:1963: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at /opt/conda/conda-bld/pytorch_1708025831440/work/build/aten/src/ATen/core/TensorBody.h:489.)
+  assert incoming.grad is not None
+Traceback (most recent call last):
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 3082, in <module>
+    main()
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 3072, in main
+    run_day5_distributed(seed=arguments.seed, shards=arguments.shards)
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 2137, in run_day5_distributed
+    train_loss, train_acc, epoch_time = distributed_pipeline_train_epoch(
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 1963, in distributed_pipeline_train_epoch
+    assert incoming.grad is not None
+AssertionError
+srun: error: rsgpu018: task 1: Exited with exit code 1
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 602723.0 ON rsgpu018 CANCELLED AT 2026-08-16T02:57:10 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 602723 ON rsgpu018 CANCELLED AT 2026-08-16T02:57:10 DUE TO TIME LIMIT ***

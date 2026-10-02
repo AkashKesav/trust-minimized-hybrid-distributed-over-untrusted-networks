@@ -1,0 +1,5 @@
+attack,n_malicious,detector,seed,status,collapse_epoch,completed_epochs,final_test_accuracy,mean_tpr_last_10,mean_fpr_last_10
+zero_update,2,krum,42,complete,,50,0.6358,0.0,0.3333333333333333
+mean_shift,2,krum,42,complete,,50,0.6525,0.0,0.3333333333333333
+gaussian,2,krum,42,complete,,50,0.6113,1.0,0.0
+byzantine_majority,2,krum,42,complete,,50,0.6113,1.0,0.0

@@ -1,0 +1,15 @@
+{
+  "id": "akashkesav/paper-day2-corrected-three-seeds",
+  "title": "Paper Day2 Corrected Three Seeds",
+  "code_file": "day2_corrected.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": ["gpu", "research"],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": []
+}

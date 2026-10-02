@@ -1,0 +1,316 @@
+NCCL version 2.19.3+cuda11.8
+output:      /scratch/mm24r002/paper_rerun_20260815/results/full
+config hash: 7e267c0bf303542b
+run days:    [5]
+seeds:       (42, 43, 44)
+{
+  "created_utc": "2026-08-16T13:08:20Z",
+  "config": {
+    "output_root": "/scratch/mm24r002/paper_rerun_20260815/results/full",
+    "data_root": "/scratch/mm24r002/paper_rerun_20260815/data",
+    "model_architecture": "torchvision_resnet50_standard_stem_cifar10_head",
+    "model_num_classes": 10,
+    "model_parameter_count": 23528522,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "split_seed": 20260815,
+    "train_size": 45000,
+    "validation_size": 5000,
+    "test_size": 10000,
+    "batch_size": 128,
+    "loader_workers": 2,
+    "learning_rate": 0.1,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "nesterov": true,
+    "lr_milestones": [
+      100,
+      150
+    ],
+    "lr_gamma": 0.1,
+    "temperature": 0.1,
+    "use_bfloat16_amp": true,
+    "deterministic": true,
+    "n_workers": 8,
+    "day1_epochs": 200,
+    "day3_epochs": 50,
+    "day4_epochs": 5,
+    "day4_benchmark_warmup": 2,
+    "day4_benchmark_runs": 5,
+    "day5_epochs": 200,
+    "day6_epochs": 20,
+    "day7_epochs": 5,
+    "day10_epochs": 30,
+    "gaussian_covariance": 30.0,
+    "mean_shift_scale": 1.0,
+    "majority_scale": 5.0,
+    "save_checkpoints": true,
+    "checkpoint_interval": 5
+  },
+  "config_hash": "7e267c0bf303542b",
+  "run_days": [
+    5
+  ],
+  "smoke_test": false,
+  "python": "3.10.13",
+  "platform": "Linux-4.18.0-513.5.1.el8_9.x86_64-x86_64-with-glibc2.28",
+  "torch": "2.2.1",
+  "torchvision": "0.17.1",
+  "cuda_runtime": "11.8",
+  "cudnn": 8700,
+  "numpy": "1.26.4",
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA A100 80GB PCIe",
+      "total_memory_bytes": 84974239744,
+      "compute_capability": "8.0"
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA A100 80GB PCIe",
+      "total_memory_bytes": 84974239744,
+      "compute_capability": "8.0"
+    }
+  ],
+  "scope_note": "Algorithm-level DGX simulation; no real blockchain/network/VRF proof execution."
+}
+Files already downloaded and verified
+Files already downloaded and verified
+NCCL version 2.19.3+cuda11.8
+NCCL version 2.19.3+cuda11.8
+[day5_k4_seed42] 001/200 train=0.1426 val=0.1990 test(report)=0.1950 throughput=1140.6/s
+[day5_k4_seed42] 010/200 train=0.5557 val=0.5338 test(report)=0.5273 throughput=3042.7/s
+[day5_k4_seed42] 020/200 train=0.7045 val=0.6962 test(report)=0.7010 throughput=3069.9/s
+[day5_k4_seed42] 030/200 train=0.7416 val=0.6936 test(report)=0.6968 throughput=3092.9/s
+[day5_k4_seed42] 040/200 train=0.7576 val=0.7278 test(report)=0.7313 throughput=3116.2/s
+[day5_k4_seed42] 050/200 train=0.7626 val=0.7258 test(report)=0.7334 throughput=3093.5/s
+[day5_k4_seed42] 060/200 train=0.7707 val=0.7394 test(report)=0.7420 throughput=3093.5/s
+[day5_k4_seed42] 070/200 train=0.7779 val=0.7464 test(report)=0.7497 throughput=3091.2/s
+[day5_k4_seed42] 080/200 train=0.7799 val=0.7440 test(report)=0.7377 throughput=3092.7/s
+[day5_k4_seed42] 090/200 train=0.7800 val=0.7576 test(report)=0.7495 throughput=3090.0/s
+[day5_k4_seed42] 100/200 train=0.7844 val=0.7354 test(report)=0.7373 throughput=3091.0/s
+[day5_k4_seed42] 110/200 train=0.9027 val=0.8630 test(report)=0.8651 throughput=2945.2/s
+[day5_k4_seed42] 120/200 train=0.9160 val=0.8612 test(report)=0.8582 throughput=3097.5/s
+[day5_k4_seed42] 130/200 train=0.9214 val=0.8664 test(report)=0.8601 throughput=3098.9/s
+[day5_k4_seed42] 140/200 train=0.9218 val=0.8678 test(report)=0.8610 throughput=3070.4/s
+[day5_k4_seed42] 150/200 train=0.9271 val=0.8696 test(report)=0.8549 throughput=3069.1/s
+[day5_k4_seed42] 160/200 train=0.9785 val=0.8898 test(report)=0.8823 throughput=3070.6/s
+[day5_k4_seed42] 170/200 train=0.9834 val=0.8892 test(report)=0.8807 throughput=3012.5/s
+[day5_k4_seed42] 180/200 train=0.9878 val=0.8866 test(report)=0.8822 throughput=2929.0/s
+[day5_k4_seed42] 190/200 train=0.9905 val=0.8884 test(report)=0.8823 throughput=3067.4/s
+[day5_k4_seed42] 200/200 train=0.9910 val=0.8904 test(report)=0.8795 throughput=3064.3/s
+NCCL version 2.19.3+cuda11.8
+output:      /scratch/mm24r002/paper_rerun_20260815/results/full
+config hash: 7e267c0bf303542b
+run days:    [5]
+seeds:       (42, 43, 44)
+{
+  "created_utc": "2026-08-16T14:05:49Z",
+  "config": {
+    "output_root": "/scratch/mm24r002/paper_rerun_20260815/results/full",
+    "data_root": "/scratch/mm24r002/paper_rerun_20260815/data",
+    "model_architecture": "torchvision_resnet50_standard_stem_cifar10_head",
+    "model_num_classes": 10,
+    "model_parameter_count": 23528522,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "split_seed": 20260815,
+    "train_size": 45000,
+    "validation_size": 5000,
+    "test_size": 10000,
+    "batch_size": 128,
+    "loader_workers": 2,
+    "learning_rate": 0.1,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "nesterov": true,
+    "lr_milestones": [
+      100,
+      150
+    ],
+    "lr_gamma": 0.1,
+    "temperature": 0.1,
+    "use_bfloat16_amp": true,
+    "deterministic": true,
+    "n_workers": 8,
+    "day1_epochs": 200,
+    "day3_epochs": 50,
+    "day4_epochs": 5,
+    "day4_benchmark_warmup": 2,
+    "day4_benchmark_runs": 5,
+    "day5_epochs": 200,
+    "day6_epochs": 20,
+    "day7_epochs": 5,
+    "day10_epochs": 30,
+    "gaussian_covariance": 30.0,
+    "mean_shift_scale": 1.0,
+    "majority_scale": 5.0,
+    "save_checkpoints": true,
+    "checkpoint_interval": 5
+  },
+  "config_hash": "7e267c0bf303542b",
+  "run_days": [
+    5
+  ],
+  "smoke_test": false,
+  "python": "3.10.13",
+  "platform": "Linux-4.18.0-513.5.1.el8_9.x86_64-x86_64-with-glibc2.28",
+  "torch": "2.2.1",
+  "torchvision": "0.17.1",
+  "cuda_runtime": "11.8",
+  "cudnn": 8700,
+  "numpy": "1.26.4",
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA A100 80GB PCIe",
+      "total_memory_bytes": 84974239744,
+      "compute_capability": "8.0"
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA A100 80GB PCIe",
+      "total_memory_bytes": 84974239744,
+      "compute_capability": "8.0"
+    }
+  ],
+  "scope_note": "Algorithm-level DGX simulation; no real blockchain/network/VRF proof execution."
+}
+Files already downloaded and verified
+Files already downloaded and verified
+NCCL version 2.19.3+cuda11.8
+NCCL version 2.19.3+cuda11.8
+[day5_k4_seed43] 001/200 train=0.1366 val=0.1618 test(report)=0.1629 throughput=2743.5/s
+[day5_k4_seed43] 010/200 train=0.5433 val=0.5518 test(report)=0.5628 throughput=2905.8/s
+[day5_k4_seed43] 020/200 train=0.6969 val=0.6800 test(report)=0.6870 throughput=3073.2/s
+[day5_k4_seed43] 030/200 train=0.7374 val=0.7424 test(report)=0.7318 throughput=3099.7/s
+[day5_k4_seed43] 040/200 train=0.7582 val=0.7418 test(report)=0.7400 throughput=3012.5/s
+[day5_k4_seed43] 050/200 train=0.7672 val=0.7420 test(report)=0.7498 throughput=3081.5/s
+[day5_k4_seed43] 060/200 train=0.7746 val=0.7440 test(report)=0.7439 throughput=3081.6/s
+[day5_k4_seed43] 070/200 train=0.7756 val=0.7432 test(report)=0.7323 throughput=2628.5/s
+[day5_k4_seed43] 080/200 train=0.7803 val=0.7414 test(report)=0.7353 throughput=3094.4/s
+[day5_k4_seed43] 090/200 train=0.7798 val=0.7674 test(report)=0.7625 throughput=3079.9/s
+[day5_k4_seed43] 100/200 train=0.7848 val=0.7796 test(report)=0.7706 throughput=3088.2/s
+[day5_k4_seed43] 110/200 train=0.9044 val=0.8764 test(report)=0.8711 throughput=2905.6/s
+[day5_k4_seed43] 120/200 train=0.9186 val=0.8684 test(report)=0.8676 throughput=3089.7/s
+[day5_k4_seed43] 130/200 train=0.9207 val=0.8596 test(report)=0.8578 throughput=3073.7/s
+[day5_k4_seed43] 140/200 train=0.9265 val=0.8602 test(report)=0.8559 throughput=3088.0/s
+[day5_k4_seed43] 150/200 train=0.9303 val=0.8674 test(report)=0.8553 throughput=3083.2/s
+[day5_k4_seed43] 160/200 train=0.9804 val=0.8950 test(report)=0.8894 throughput=3057.5/s
+[day5_k4_seed43] 170/200 train=0.9865 val=0.8946 test(report)=0.8907 throughput=3084.5/s
+[day5_k4_seed43] 180/200 train=0.9896 val=0.8930 test(report)=0.8883 throughput=3078.4/s
+[day5_k4_seed43] 190/200 train=0.9906 val=0.8964 test(report)=0.8881 throughput=2898.1/s
+[day5_k4_seed43] 200/200 train=0.9932 val=0.8952 test(report)=0.8859 throughput=3067.6/s
+NCCL version 2.19.3+cuda11.8
+output:      /scratch/mm24r002/paper_rerun_20260815/results/full
+config hash: 7e267c0bf303542b
+run days:    [5]
+seeds:       (42, 43, 44)
+{
+  "created_utc": "2026-08-16T15:02:27Z",
+  "config": {
+    "output_root": "/scratch/mm24r002/paper_rerun_20260815/results/full",
+    "data_root": "/scratch/mm24r002/paper_rerun_20260815/data",
+    "model_architecture": "torchvision_resnet50_standard_stem_cifar10_head",
+    "model_num_classes": 10,
+    "model_parameter_count": 23528522,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "split_seed": 20260815,
+    "train_size": 45000,
+    "validation_size": 5000,
+    "test_size": 10000,
+    "batch_size": 128,
+    "loader_workers": 2,
+    "learning_rate": 0.1,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "nesterov": true,
+    "lr_milestones": [
+      100,
+      150
+    ],
+    "lr_gamma": 0.1,
+    "temperature": 0.1,
+    "use_bfloat16_amp": true,
+    "deterministic": true,
+    "n_workers": 8,
+    "day1_epochs": 200,
+    "day3_epochs": 50,
+    "day4_epochs": 5,
+    "day4_benchmark_warmup": 2,
+    "day4_benchmark_runs": 5,
+    "day5_epochs": 200,
+    "day6_epochs": 20,
+    "day7_epochs": 5,
+    "day10_epochs": 30,
+    "gaussian_covariance": 30.0,
+    "mean_shift_scale": 1.0,
+    "majority_scale": 5.0,
+    "save_checkpoints": true,
+    "checkpoint_interval": 5
+  },
+  "config_hash": "7e267c0bf303542b",
+  "run_days": [
+    5
+  ],
+  "smoke_test": false,
+  "python": "3.10.13",
+  "platform": "Linux-4.18.0-513.5.1.el8_9.x86_64-x86_64-with-glibc2.28",
+  "torch": "2.2.1",
+  "torchvision": "0.17.1",
+  "cuda_runtime": "11.8",
+  "cudnn": 8700,
+  "numpy": "1.26.4",
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA A100 80GB PCIe",
+      "total_memory_bytes": 84974239744,
+      "compute_capability": "8.0"
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA A100 80GB PCIe",
+      "total_memory_bytes": 84974239744,
+      "compute_capability": "8.0"
+    }
+  ],
+  "scope_note": "Algorithm-level DGX simulation; no real blockchain/network/VRF proof execution."
+}
+Files already downloaded and verified
+Files already downloaded and verified
+NCCL version 2.19.3+cuda11.8
+NCCL version 2.19.3+cuda11.8
+[day5_k4_seed44] 001/200 train=0.1419 val=0.1776 test(report)=0.1847 throughput=2716.9/s
+[day5_k4_seed44] 010/200 train=0.5329 val=0.4026 test(report)=0.4134 throughput=3056.4/s
+[day5_k4_seed44] 020/200 train=0.6858 val=0.6614 test(report)=0.6611 throughput=3038.6/s
+[day5_k4_seed44] 030/200 train=0.7388 val=0.7030 test(report)=0.7023 throughput=3056.8/s
+[day5_k4_seed44] 040/200 train=0.7549 val=0.7398 test(report)=0.7391 throughput=3057.7/s
+[day5_k4_seed44] 050/200 train=0.7632 val=0.7470 test(report)=0.7476 throughput=3034.5/s
+[day5_k4_seed44] 060/200 train=0.7701 val=0.7164 test(report)=0.7026 throughput=3029.3/s
+[day5_k4_seed44] 070/200 train=0.7754 val=0.7614 test(report)=0.7503 throughput=3066.8/s
+[day5_k4_seed44] 080/200 train=0.7796 val=0.7470 test(report)=0.7473 throughput=3072.5/s
+[day5_k4_seed44] 090/200 train=0.7804 val=0.7174 test(report)=0.7174 throughput=3047.2/s
+[day5_k4_seed44] 100/200 train=0.7833 val=0.7516 test(report)=0.7503 throughput=3065.8/s
+[day5_k4_seed44] 110/200 train=0.9025 val=0.8638 test(report)=0.8626 throughput=3059.1/s
+[day5_k4_seed44] 120/200 train=0.9167 val=0.8654 test(report)=0.8630 throughput=3083.5/s
+[day5_k4_seed44] 130/200 train=0.9178 val=0.8534 test(report)=0.8554 throughput=3067.6/s
+[day5_k4_seed44] 140/200 train=0.9226 val=0.8544 test(report)=0.8483 throughput=3075.1/s
+[day5_k4_seed44] 150/200 train=0.9261 val=0.8646 test(report)=0.8572 throughput=3067.6/s
+[day5_k4_seed44] 160/200 train=0.9761 val=0.8920 test(report)=0.8846 throughput=3038.9/s
+[day5_k4_seed44] 170/200 train=0.9830 val=0.8958 test(report)=0.8837 throughput=3064.4/s
+[day5_k4_seed44] 180/200 train=0.9863 val=0.8932 test(report)=0.8821 throughput=3075.3/s
+[day5_k4_seed44] 190/200 train=0.9877 val=0.8894 test(report)=0.8838 throughput=3044.7/s
+[day5_k4_seed44] 200/200 train=0.9898 val=0.8900 test(report)=0.8854 throughput=3079.0/s
+day5_k4_complete=true

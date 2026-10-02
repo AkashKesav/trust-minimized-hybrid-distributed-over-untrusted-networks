@@ -1,0 +1,7 @@
+configuration,seed,final_test_accuracy,max_test_accuracy_audit_only,global_validation_selected_checkpoint_available
+baseline_kmeans_topk,42,0.4663,0.4663,False
+baseline_kmeans_topk,43,0.3794,0.3794,False
+baseline_kmeans_topk,44,0.4627,0.4627,False
+plus_krum_topk,42,0.4892,0.4892,False
+plus_krum_topk,43,0.4821,0.4821,False
+plus_krum_topk,44,0.5136,0.5149,False

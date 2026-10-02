@@ -1,0 +1,30 @@
+{
+  "aggregation": "topk",
+  "attack": "clean",
+  "best_test_acc_reporting_only": 0.8713,
+  "checkpoint": "/scratch/mm24r002/paper_rerun_20260815/results/full/checkpoints/day2_n2_topk_seed43_final.pt",
+  "collapse_epoch": null,
+  "completed_epochs": 200,
+  "config_hash": "7e267c0bf303542b",
+  "csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day2_n2_topk_seed43.csv",
+  "detector": "none",
+  "epochs": 200,
+  "gpu_ids": [
+    0
+  ],
+  "gpu_names": [
+    "NVIDIA A100 80GB PCIe"
+  ],
+  "kind": "day2",
+  "malicious_indices": [],
+  "mean_fpr_last_10": null,
+  "mean_tpr_last_10": null,
+  "n_malicious": 0,
+  "n_workers": 2,
+  "run_name": "day2_n2_topk_seed43",
+  "seed": 43,
+  "started_utc": "2026-08-15T16:33:23Z",
+  "status": "complete",
+  "wall_time_sec": 2046.8275203332305,
+  "worker_csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day2_n2_topk_seed43_workers.csv"
+}

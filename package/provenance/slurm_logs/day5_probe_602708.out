@@ -1,0 +1,89 @@
+output:      /scratch/mm24r002/paper_rerun_20260815/dgx_results
+config hash: 82565739381e7c5a
+run days:    [1, 2, 3, 4, 5, 6, 7, 10]
+seeds:       (42, 43, 44)
+{
+  "created_utc": "2026-08-15T16:19:06Z",
+  "config": {
+    "output_root": "./dgx_results",
+    "data_root": "./data",
+    "model_architecture": "torchvision_resnet50_standard_stem_cifar10_head",
+    "model_num_classes": 10,
+    "model_parameter_count": 23528522,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "split_seed": 20260815,
+    "train_size": 45000,
+    "validation_size": 5000,
+    "test_size": 10000,
+    "batch_size": 128,
+    "loader_workers": 2,
+    "learning_rate": 0.1,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "nesterov": true,
+    "lr_milestones": [
+      100,
+      150
+    ],
+    "lr_gamma": 0.1,
+    "temperature": 0.1,
+    "use_bfloat16_amp": true,
+    "deterministic": true,
+    "n_workers": 8,
+    "day1_epochs": 200,
+    "day3_epochs": 50,
+    "day4_epochs": 5,
+    "day4_benchmark_warmup": 2,
+    "day4_benchmark_runs": 5,
+    "day5_epochs": 200,
+    "day6_epochs": 20,
+    "day7_epochs": 5,
+    "day10_epochs": 30,
+    "gaussian_covariance": 30.0,
+    "mean_shift_scale": 1.0,
+    "majority_scale": 5.0,
+    "save_checkpoints": true,
+    "checkpoint_interval": 5
+  },
+  "config_hash": "82565739381e7c5a",
+  "run_days": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    10
+  ],
+  "smoke_test": false,
+  "python": "3.10.13",
+  "platform": "Linux-4.18.0-513.5.1.el8_9.x86_64-x86_64-with-glibc2.28",
+  "torch": "2.2.1",
+  "torchvision": "0.17.1",
+  "cuda_runtime": "11.8",
+  "cudnn": 8700,
+  "numpy": "1.26.4",
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA A100 80GB PCIe",
+      "total_memory_bytes": 84974239744,
+      "compute_capability": "8.0"
+    }
+  ],
+  "scope_note": "Algorithm-level DGX simulation; no real blockchain/network/VRF proof execution."
+}
+Files already downloaded and verified
+Files already downloaded and verified
+stage0 params: 14582848
+stage1 params: 8945674
+batch=0 mid_shape=(128, 2048, 1, 1) mid_dtype=torch.bfloat16 out_dtype=torch.bfloat16 loss=325.8699 finite=True mid_min=0.0000 mid_max=12.3750 out_min=-4.9062 out_max=5.7188
+batch=1 mid_shape=(128, 2048, 1, 1) mid_dtype=torch.bfloat16 out_dtype=torch.bfloat16 loss=332.1448 finite=True mid_min=0.0000 mid_max=11.3750 out_min=-6.7500 out_max=3.4062
+batch=2 mid_shape=(128, 2048, 1, 1) mid_dtype=torch.bfloat16 out_dtype=torch.bfloat16 loss=347.2966 finite=True mid_min=0.0000 mid_max=14.0000 out_min=-4.7500 out_max=3.2031
+ALL_FINITE_WITHOUT_NCCL
+probe_complete=true

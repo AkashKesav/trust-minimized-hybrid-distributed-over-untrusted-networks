@@ -1,0 +1,21 @@
+{
+  "best_validation_acc": 0.895,
+  "best_validation_epoch": 176,
+  "checkpoint": "/scratch/mm24r002/paper_rerun_20260815/results/full/checkpoints/day1_seed42_validation_best.pt",
+  "config_hash": "7e267c0bf303542b",
+  "csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day1_seed42.csv",
+  "epochs": 200,
+  "gpu_ids": [
+    0
+  ],
+  "gpu_names": [
+    "NVIDIA A100 80GB PCIe"
+  ],
+  "kind": "day1",
+  "seed": 42,
+  "started_utc": "2026-08-15T16:33:23Z",
+  "status": "complete",
+  "test_acc_at_validation_best": 0.8854,
+  "test_loss_at_validation_best": 0.4440512706875801,
+  "wall_time_sec": 1882.9723285883665
+}

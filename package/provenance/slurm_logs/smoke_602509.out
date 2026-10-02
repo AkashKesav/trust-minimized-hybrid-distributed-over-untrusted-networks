@@ -1,0 +1,95 @@
+timestamp=2026-08-15T15:07:46+05:30
+hostname=rsgpu019
+job_id=602509
+0, NVIDIA A100 80GB PCIe, 81920 MiB, 550.54.14
+output:      /scratch/mm24r002/paper_rerun_20260815/results/smoke
+config hash: bd2f170afc1cc454
+run days:    [1, 2, 3, 4, 5, 6, 7, 10]
+seeds:       (42,)
+{
+  "created_utc": "2026-08-15T09:39:08Z",
+  "config": {
+    "output_root": "/scratch/mm24r002/paper_rerun_20260815/results/smoke",
+    "data_root": "/scratch/mm24r002/paper_rerun_20260815/data",
+    "model_architecture": "torchvision_resnet50_standard_stem_cifar10_head",
+    "model_num_classes": 10,
+    "model_parameter_count": 23528522,
+    "seeds": [
+      42
+    ],
+    "split_seed": 20260815,
+    "train_size": 45000,
+    "validation_size": 5000,
+    "test_size": 10000,
+    "batch_size": 128,
+    "loader_workers": 0,
+    "learning_rate": 0.1,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "nesterov": true,
+    "lr_milestones": [
+      100,
+      150
+    ],
+    "lr_gamma": 0.1,
+    "temperature": 0.1,
+    "use_bfloat16_amp": true,
+    "deterministic": true,
+    "n_workers": 8,
+    "day1_epochs": 2,
+    "day3_epochs": 2,
+    "day4_epochs": 1,
+    "day4_benchmark_warmup": 0,
+    "day4_benchmark_runs": 1,
+    "day5_epochs": 2,
+    "day6_epochs": 2,
+    "day7_epochs": 2,
+    "day10_epochs": 2,
+    "gaussian_covariance": 30.0,
+    "mean_shift_scale": 1.0,
+    "majority_scale": 5.0,
+    "save_checkpoints": false,
+    "checkpoint_interval": 1
+  },
+  "config_hash": "bd2f170afc1cc454",
+  "run_days": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    10
+  ],
+  "smoke_test": true,
+  "python": "3.10.13",
+  "platform": "Linux-4.18.0-513.5.1.el8_9.x86_64-x86_64-with-glibc2.28",
+  "torch": "2.2.1",
+  "torchvision": "0.17.1",
+  "cuda_runtime": "11.8",
+  "cudnn": 8700,
+  "numpy": "1.26.4",
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA A100 80GB PCIe",
+      "total_memory_bytes": 84974239744,
+      "compute_capability": "8.0"
+    }
+  ],
+  "scope_note": "Algorithm-level DGX simulation; no real blockchain/network/VRF proof execution."
+}
+Files already downloaded and verified
+Files already downloaded and verified
+[single_gpu_smoke] starting 1/7: {"cost":1.0,"day":1,"kind":"day1","seed":42}
+[day1_seed42] 001/2 train=0.1521 val=0.2044 test(report)=0.2051
+[day1_seed42] 002/2 train=0.2304 val=0.2754 test(report)=0.2849
+[single_gpu_smoke] starting 2/7: {"aggregation":"softmax","attack":"clean","cost":1.0,"day":2,"detector":"none","epochs":2,"kind":"federated","label":"n2_softmax","n_malicious":0,"n_workers":2,"seed":42}
+[day2_n2_softmax_seed42] 001/2 test=0.1000 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed42] 002/2 test=0.1145 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[single_gpu_smoke] starting 3/7: {"cost":1.0,"day":4,"kind":"day4","seed":42}
+[day4_seed42/tdml_reconstruction] 1/1 total=36498.8ms detector=467.3ms commit=0.0ms
+[day4_seed42/ours_without_commit_reveal] 1/1 total=37849.5ms detector=546.8ms commit=0.0ms
+[day4_seed42/ours_with_commit_reveal] 1/1 total=41305.2ms detector=68.0ms commit=3939.0ms
+[single_gpu_smoke] starting 4/7: {"aggregation":"softmax","attack":"mean_shift","cost":1.0,"day":3,"detector":"kmeans","epochs":2,"kind":"federated","n_malicious":2,"seed":42}

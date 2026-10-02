@@ -1,0 +1,4 @@
+output:      /scratch/mm24r002/paper_rerun_20260815/results/hybrid_cpu_smoke
+config hash: fa225e2fbce962e1
+run days:    [1, 2, 3, 4, 5, 6, 7, 10]
+seeds:       (42, 43, 44)

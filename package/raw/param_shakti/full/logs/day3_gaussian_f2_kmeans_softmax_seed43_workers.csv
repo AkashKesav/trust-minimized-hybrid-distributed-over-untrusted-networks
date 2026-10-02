@@ -1,0 +1,1 @@
+day,run_name,seed,epoch,worker_id,is_malicious,is_flagged,is_accepted,validation_acc,detector_score,projection_1,projection_2,update_mean,update_std,update_rms,config_hash

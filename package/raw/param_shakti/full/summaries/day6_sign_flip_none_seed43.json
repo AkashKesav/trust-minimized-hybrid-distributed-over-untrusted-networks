@@ -1,0 +1,18 @@
+{
+  "attack": "sign_flip",
+  "best_validation_acc": 0.6642,
+  "best_validation_epoch": 20,
+  "config_hash": "7e267c0bf303542b",
+  "detector": "none",
+  "detector_calibration": "not_applicable",
+  "malicious_stages": [
+    0
+  ],
+  "mean_fpr": 0.0,
+  "mean_tpr": 0.0,
+  "run_name": "day6_sign_flip_none_seed43",
+  "seed": 43,
+  "status": "complete",
+  "test_acc_at_validation_best": 0.654,
+  "test_loss_at_validation_best": 1.0172317375183106
+}

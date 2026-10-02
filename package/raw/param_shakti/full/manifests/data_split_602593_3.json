@@ -1,0 +1,8 @@
+{
+  "split_seed": 20260815,
+  "test_count": 10000,
+  "train_count": 45000,
+  "train_indices_sha256": "15b8fd3ce5677207c7ab7532789de719903bdbe707ec3bdf14821ed6e0aee319",
+  "validation_count": 5000,
+  "validation_indices_sha256": "4192516772088a6c42463fc91f59cf5a1994e9eef5d6ff565f2c580f4d9b3e8e"
+}

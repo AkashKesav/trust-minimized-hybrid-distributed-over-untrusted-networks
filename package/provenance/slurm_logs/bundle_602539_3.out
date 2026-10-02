@@ -1,0 +1,331 @@
+timestamp=2026-08-15T18:28:24+05:30
+hostname=rsgpu004
+job_id=602593 array_task=3
+0, NVIDIA A100 80GB PCIe, 81920 MiB, 550.54.14
+output:      /scratch/mm24r002/paper_rerun_20260815/results/full
+config hash: 7e267c0bf303542b
+run days:    [1, 2, 3, 4, 6, 7, 10]
+seeds:       (42, 43, 44)
+{
+  "created_utc": "2026-08-15T12:58:33Z",
+  "config": {
+    "output_root": "/scratch/mm24r002/paper_rerun_20260815/results/full",
+    "data_root": "/scratch/mm24r002/paper_rerun_20260815/data",
+    "model_architecture": "torchvision_resnet50_standard_stem_cifar10_head",
+    "model_num_classes": 10,
+    "model_parameter_count": 23528522,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "split_seed": 20260815,
+    "train_size": 45000,
+    "validation_size": 5000,
+    "test_size": 10000,
+    "batch_size": 128,
+    "loader_workers": 2,
+    "learning_rate": 0.1,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "nesterov": true,
+    "lr_milestones": [
+      100,
+      150
+    ],
+    "lr_gamma": 0.1,
+    "temperature": 0.1,
+    "use_bfloat16_amp": true,
+    "deterministic": true,
+    "n_workers": 8,
+    "day1_epochs": 200,
+    "day3_epochs": 50,
+    "day4_epochs": 5,
+    "day4_benchmark_warmup": 2,
+    "day4_benchmark_runs": 5,
+    "day5_epochs": 200,
+    "day6_epochs": 20,
+    "day7_epochs": 5,
+    "day10_epochs": 30,
+    "gaussian_covariance": 30.0,
+    "mean_shift_scale": 1.0,
+    "majority_scale": 5.0,
+    "save_checkpoints": true,
+    "checkpoint_interval": 5
+  },
+  "config_hash": "7e267c0bf303542b",
+  "run_days": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    10
+  ],
+  "smoke_test": false,
+  "python": "3.10.13",
+  "platform": "Linux-4.18.0-513.5.1.el8_9.x86_64-x86_64-with-glibc2.28",
+  "torch": "2.2.1",
+  "torchvision": "0.17.1",
+  "cuda_runtime": "11.8",
+  "cudnn": 8700,
+  "numpy": "1.26.4",
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA A100 80GB PCIe",
+      "total_memory_bytes": 84974239744,
+      "compute_capability": "8.0"
+    }
+  ],
+  "scope_note": "Algorithm-level DGX simulation; no real blockchain/network/VRF proof execution."
+}
+Files already downloaded and verified
+Files already downloaded and verified
+[bundle_03_of_08] starting 1/15: {"aggregation":"softmax","attack":"clean","cost":4.0,"day":2,"detector":"none","epochs":200,"kind":"federated","label":"n4_softmax","n_malicious":0,"n_workers":4,"seed":42}
+[day2_n4_softmax_seed42] 001/200 test=0.1000 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 005/200 test=0.2066 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 010/200 test=0.3690 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 015/200 test=0.4628 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 020/200 test=0.5094 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 025/200 test=0.5445 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 030/200 test=0.5815 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 035/200 test=0.6277 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 040/200 test=0.6591 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 045/200 test=0.6737 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 050/200 test=0.7096 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 055/200 test=0.7290 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 060/200 test=0.7400 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 065/200 test=0.7455 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 070/200 test=0.7691 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 075/200 test=0.7723 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 080/200 test=0.7881 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 085/200 test=0.7888 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 090/200 test=0.7994 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 095/200 test=0.8025 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 100/200 test=0.8034 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 105/200 test=0.8369 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 110/200 test=0.8426 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 115/200 test=0.8452 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 120/200 test=0.8449 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 125/200 test=0.8475 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 130/200 test=0.8488 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 135/200 test=0.8518 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 140/200 test=0.8540 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 145/200 test=0.8538 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 150/200 test=0.8526 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 155/200 test=0.8573 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 160/200 test=0.8566 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 165/200 test=0.8569 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 170/200 test=0.8551 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 175/200 test=0.8549 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 180/200 test=0.8540 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 185/200 test=0.8549 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 190/200 test=0.8560 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 195/200 test=0.8525 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[day2_n4_softmax_seed42] 200/200 test=0.8535 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3]
+[bundle_03_of_08] starting 2/15: {"aggregation":"topk","attack":"clean","cost":4.0,"day":2,"detector":"none","epochs":200,"kind":"federated","label":"n2_topk","n_malicious":0,"n_workers":2,"seed":44}
+[day2_n2_topk_seed44] 001/200 test=0.1945 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 005/200 test=0.2788 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 010/200 test=0.3801 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 015/200 test=0.4516 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 020/200 test=0.4780 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 025/200 test=0.5670 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 030/200 test=0.5809 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 035/200 test=0.6261 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 040/200 test=0.6796 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 045/200 test=0.6647 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 050/200 test=0.6904 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 055/200 test=0.7059 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 060/200 test=0.7208 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 065/200 test=0.7300 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 070/200 test=0.7428 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 075/200 test=0.7458 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 080/200 test=0.7278 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 085/200 test=0.7104 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 090/200 test=0.7550 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 095/200 test=0.7342 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 100/200 test=0.7291 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 105/200 test=0.8389 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 110/200 test=0.8453 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 115/200 test=0.8502 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 120/200 test=0.8505 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 125/200 test=0.8495 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 130/200 test=0.8395 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 135/200 test=0.8497 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 140/200 test=0.8472 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 145/200 test=0.8494 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 150/200 test=0.8438 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 155/200 test=0.8688 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 160/200 test=0.8678 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 165/200 test=0.8703 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 170/200 test=0.8734 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 175/200 test=0.8716 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 180/200 test=0.8714 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 185/200 test=0.8720 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 190/200 test=0.8722 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 195/200 test=0.8736 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed44] 200/200 test=0.8721 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[bundle_03_of_08] starting 3/15: {"cost":4.0,"day":1,"kind":"day1","seed":43}
+[day1_seed43] 001/200 train=0.1090 val=0.1176 test(report)=0.1219
+[day1_seed43] 010/200 train=0.5459 val=0.5450 test(report)=0.5526
+[day1_seed43] 020/200 train=0.7021 val=0.6882 test(report)=0.6898
+[day1_seed43] 030/200 train=0.7394 val=0.7356 test(report)=0.7308
+[day1_seed43] 040/200 train=0.7576 val=0.7176 test(report)=0.7182
+[day1_seed43] 050/200 train=0.7659 val=0.7370 test(report)=0.7341
+[day1_seed43] 060/200 train=0.7712 val=0.7642 test(report)=0.7605
+[day1_seed43] 070/200 train=0.7769 val=0.7404 test(report)=0.7348
+[day1_seed43] 080/200 train=0.7783 val=0.6976 test(report)=0.6940
+[day1_seed43] 090/200 train=0.7800 val=0.7670 test(report)=0.7685
+[day1_seed43] 100/200 train=0.7850 val=0.7696 test(report)=0.7579
+[day1_seed43] 110/200 train=0.9005 val=0.8738 test(report)=0.8724
+[day1_seed43] 120/200 train=0.9160 val=0.8712 test(report)=0.8698
+[day1_seed43] 130/200 train=0.9194 val=0.8550 test(report)=0.8594
+[day1_seed43] 140/200 train=0.9222 val=0.8666 test(report)=0.8559
+[day1_seed43] 150/200 train=0.9237 val=0.8508 test(report)=0.8455
+[day1_seed43] 160/200 train=0.9773 val=0.8940 test(report)=0.8895
+[day1_seed43] 170/200 train=0.9827 val=0.8924 test(report)=0.8909
+[day1_seed43] 180/200 train=0.9856 val=0.8938 test(report)=0.8904
+[day1_seed43] 190/200 train=0.9889 val=0.8972 test(report)=0.8896
+[day1_seed43] 200/200 train=0.9894 val=0.8948 test(report)=0.8893
+[bundle_03_of_08] starting 4/15: {"aggregation":"softmax","attack":"byzantine_majority","cost":1.0,"day":3,"detector":"krum","epochs":50,"kind":"federated","n_malicious":2,"seed":42}
+[day3_byzantine_majority_f2_krum_softmax_seed42] 001/50 test=0.1000 TPR=1.000 FPR=0.000 accepted=[0, 2, 3, 5, 6, 7]
+[day3_byzantine_majority_f2_krum_softmax_seed42] 005/50 test=0.1555 TPR=1.000 FPR=0.000 accepted=[0, 2, 3, 5, 6, 7]
+[day3_byzantine_majority_f2_krum_softmax_seed42] 010/50 test=0.2249 TPR=1.000 FPR=0.000 accepted=[0, 2, 3, 5, 6, 7]
+[day3_byzantine_majority_f2_krum_softmax_seed42] 015/50 test=0.3827 TPR=1.000 FPR=0.000 accepted=[0, 2, 3, 5, 6, 7]
+[day3_byzantine_majority_f2_krum_softmax_seed42] 020/50 test=0.4348 TPR=1.000 FPR=0.000 accepted=[0, 2, 3, 5, 6, 7]
+[day3_byzantine_majority_f2_krum_softmax_seed42] 025/50 test=0.4721 TPR=1.000 FPR=0.000 accepted=[0, 2, 3, 5, 6, 7]
+[day3_byzantine_majority_f2_krum_softmax_seed42] 030/50 test=0.5003 TPR=1.000 FPR=0.000 accepted=[0, 2, 3, 5, 6, 7]
+[day3_byzantine_majority_f2_krum_softmax_seed42] 035/50 test=0.5486 TPR=1.000 FPR=0.000 accepted=[0, 2, 3, 5, 6, 7]
+[day3_byzantine_majority_f2_krum_softmax_seed42] 040/50 test=0.5642 TPR=1.000 FPR=0.000 accepted=[0, 2, 3, 5, 6, 7]
+[day3_byzantine_majority_f2_krum_softmax_seed42] 045/50 test=0.5930 TPR=1.000 FPR=0.000 accepted=[0, 2, 3, 5, 6, 7]
+[day3_byzantine_majority_f2_krum_softmax_seed42] 050/50 test=0.6113 TPR=1.000 FPR=0.000 accepted=[0, 2, 3, 5, 6, 7]
+[bundle_03_of_08] starting 5/15: {"aggregation":"softmax","attack":"byzantine_majority","cost":1.0,"day":3,"detector":"krum","epochs":50,"kind":"federated","n_malicious":5,"seed":44}
+[day3_byzantine_majority_f5_krum_softmax_seed44] 001/50 test=0.1000 TPR=0.400 FPR=1.000 accepted=[0, 1, 6]
+[day3_byzantine_majority_f5_krum_softmax_seed44] numerical collapse at epoch 2: Accepted submission produced non-finite validation logits
+[bundle_03_of_08] starting 6/15: {"aggregation":"softmax","attack":"gaussian","cost":1.0,"day":3,"detector":"kmeans","epochs":50,"kind":"federated","n_malicious":4,"seed":43}
+[day3_gaussian_f4_kmeans_softmax_seed43] numerical collapse at epoch 1: Accepted submission produced non-finite validation logits
+[bundle_03_of_08] starting 7/15: {"aggregation":"softmax","attack":"gaussian","cost":1.0,"day":3,"detector":"krum","epochs":50,"kind":"federated","n_malicious":4,"seed":42}
+[day3_gaussian_f4_krum_softmax_seed42] 001/50 test=0.1000 TPR=1.000 FPR=0.000 accepted=[0, 2, 4, 7]
+[day3_gaussian_f4_krum_softmax_seed42] 005/50 test=0.1328 TPR=1.000 FPR=0.000 accepted=[0, 2, 4, 7]
+[day3_gaussian_f4_krum_softmax_seed42] 010/50 test=0.2346 TPR=1.000 FPR=0.000 accepted=[0, 2, 4, 7]
+[day3_gaussian_f4_krum_softmax_seed42] 015/50 test=0.3450 TPR=1.000 FPR=0.000 accepted=[0, 2, 4, 7]
+[day3_gaussian_f4_krum_softmax_seed42] 020/50 test=0.4060 TPR=1.000 FPR=0.000 accepted=[0, 2, 4, 7]
+[day3_gaussian_f4_krum_softmax_seed42] 025/50 test=0.4366 TPR=1.000 FPR=0.000 accepted=[0, 2, 4, 7]
+[day3_gaussian_f4_krum_softmax_seed42] 030/50 test=0.4694 TPR=1.000 FPR=0.000 accepted=[0, 2, 4, 7]
+[day3_gaussian_f4_krum_softmax_seed42] 035/50 test=0.4972 TPR=1.000 FPR=0.000 accepted=[0, 2, 4, 7]
+[day3_gaussian_f4_krum_softmax_seed42] 040/50 test=0.5249 TPR=1.000 FPR=0.000 accepted=[0, 2, 4, 7]
+[day3_gaussian_f4_krum_softmax_seed42] 045/50 test=0.5456 TPR=1.000 FPR=0.000 accepted=[0, 2, 4, 7]
+[day3_gaussian_f4_krum_softmax_seed42] 050/50 test=0.5687 TPR=1.000 FPR=0.000 accepted=[0, 2, 4, 7]
+[bundle_03_of_08] starting 8/15: {"aggregation":"softmax","attack":"mean_shift","cost":1.0,"day":3,"detector":"kmeans","epochs":50,"kind":"federated","n_malicious":2,"seed":44}
+[day3_mean_shift_f2_kmeans_softmax_seed44] 001/50 test=0.1000 TPR=0.000 FPR=0.167 accepted=[0, 1, 3, 4, 5, 6, 7]
+[day3_mean_shift_f2_kmeans_softmax_seed44] 005/50 test=0.1957 TPR=0.000 FPR=0.500 accepted=[1, 2, 3, 5, 6]
+[day3_mean_shift_f2_kmeans_softmax_seed44] 010/50 test=0.3500 TPR=0.000 FPR=0.500 accepted=[0, 2, 3, 5, 6]
+[day3_mean_shift_f2_kmeans_softmax_seed44] 015/50 test=0.4351 TPR=0.000 FPR=0.167 accepted=[1, 2, 3, 4, 5, 6, 7]
+[day3_mean_shift_f2_kmeans_softmax_seed44] 020/50 test=0.4796 TPR=0.000 FPR=0.167 accepted=[0, 1, 2, 3, 5, 6, 7]
+[day3_mean_shift_f2_kmeans_softmax_seed44] 025/50 test=0.5233 TPR=1.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 7]
+[day3_mean_shift_f2_kmeans_softmax_seed44] 030/50 test=0.5597 TPR=1.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 7]
+[day3_mean_shift_f2_kmeans_softmax_seed44] 035/50 test=0.5798 TPR=1.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 7]
+[day3_mean_shift_f2_kmeans_softmax_seed44] 040/50 test=0.6077 TPR=1.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 7]
+[day3_mean_shift_f2_kmeans_softmax_seed44] 045/50 test=0.6417 TPR=1.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 7]
+[day3_mean_shift_f2_kmeans_softmax_seed44] 050/50 test=0.6604 TPR=0.000 FPR=0.167 accepted=[0, 2, 3, 4, 5, 6, 7]
+[bundle_03_of_08] starting 9/15: {"aggregation":"softmax","attack":"mean_shift","cost":1.0,"day":3,"detector":"krum","epochs":50,"kind":"federated","n_malicious":2,"seed":43}
+[day3_mean_shift_f2_krum_softmax_seed43] 001/50 test=0.1000 TPR=0.000 FPR=0.333 accepted=[0, 1, 2, 3, 4, 7]
+[day3_mean_shift_f2_krum_softmax_seed43] 005/50 test=0.1520 TPR=0.000 FPR=0.333 accepted=[0, 1, 2, 4, 6, 7]
+[day3_mean_shift_f2_krum_softmax_seed43] 010/50 test=0.3680 TPR=0.000 FPR=0.333 accepted=[0, 2, 3, 5, 6, 7]
+[day3_mean_shift_f2_krum_softmax_seed43] 015/50 test=0.4660 TPR=0.000 FPR=0.333 accepted=[0, 1, 2, 3, 4, 7]
+[day3_mean_shift_f2_krum_softmax_seed43] 020/50 test=0.4967 TPR=0.000 FPR=0.333 accepted=[0, 1, 2, 3, 5, 6]
+[day3_mean_shift_f2_krum_softmax_seed43] 025/50 test=0.5309 TPR=0.000 FPR=0.333 accepted=[0, 1, 2, 5, 6, 7]
+[day3_mean_shift_f2_krum_softmax_seed43] 030/50 test=0.5613 TPR=0.000 FPR=0.333 accepted=[0, 2, 3, 5, 6, 7]
+[day3_mean_shift_f2_krum_softmax_seed43] 035/50 test=0.5877 TPR=0.000 FPR=0.333 accepted=[0, 1, 2, 4, 5, 7]
+[day3_mean_shift_f2_krum_softmax_seed43] 040/50 test=0.6046 TPR=0.000 FPR=0.333 accepted=[0, 1, 2, 4, 5, 6]
+[day3_mean_shift_f2_krum_softmax_seed43] 045/50 test=0.6102 TPR=0.000 FPR=0.333 accepted=[0, 1, 2, 3, 4, 5]
+[day3_mean_shift_f2_krum_softmax_seed43] 050/50 test=0.6264 TPR=0.000 FPR=0.333 accepted=[0, 1, 2, 4, 5, 7]
+[bundle_03_of_08] starting 10/15: {"aggregation":"softmax","attack":"zero_update","cost":1.0,"day":3,"detector":"kmeans","epochs":50,"kind":"federated","n_malicious":2,"seed":42}
+[day3_zero_update_f2_kmeans_softmax_seed42] 001/50 test=0.1000 TPR=0.000 FPR=0.167 accepted=[0, 1, 2, 3, 4, 5, 6]
+[day3_zero_update_f2_kmeans_softmax_seed42] 005/50 test=0.1002 TPR=0.000 FPR=0.167 accepted=[0, 1, 2, 3, 4, 5, 7]
+[day3_zero_update_f2_kmeans_softmax_seed42] 010/50 test=0.3486 TPR=0.000 FPR=0.167 accepted=[1, 2, 3, 4, 5, 6, 7]
+[day3_zero_update_f2_kmeans_softmax_seed42] 015/50 test=0.4020 TPR=0.000 FPR=0.167 accepted=[0, 1, 2, 4, 5, 6, 7]
+[day3_zero_update_f2_kmeans_softmax_seed42] 020/50 test=0.4714 TPR=0.000 FPR=0.167 accepted=[0, 1, 2, 3, 4, 6, 7]
+[day3_zero_update_f2_kmeans_softmax_seed42] 025/50 test=0.5078 TPR=0.000 FPR=0.167 accepted=[0, 1, 2, 3, 4, 5, 6]
+[day3_zero_update_f2_kmeans_softmax_seed42] 030/50 test=0.5329 TPR=1.000 FPR=0.000 accepted=[0, 2, 3, 5, 6, 7]
+[day3_zero_update_f2_kmeans_softmax_seed42] 035/50 test=0.5663 TPR=0.000 FPR=0.333 accepted=[0, 1, 2, 3, 4, 6]
+[day3_zero_update_f2_kmeans_softmax_seed42] 040/50 test=0.5951 TPR=0.000 FPR=0.167 accepted=[0, 1, 2, 3, 4, 5, 6]
+[day3_zero_update_f2_kmeans_softmax_seed42] 045/50 test=0.6119 TPR=0.000 FPR=0.167 accepted=[0, 1, 3, 4, 5, 6, 7]
+[day3_zero_update_f2_kmeans_softmax_seed42] 050/50 test=0.6285 TPR=0.000 FPR=0.167 accepted=[1, 2, 3, 4, 5, 6, 7]
+[bundle_03_of_08] starting 11/15: {"aggregation":"softmax","attack":"zero_update","cost":1.0,"day":3,"detector":"kmeans","epochs":50,"kind":"federated","n_malicious":5,"seed":44}
+[day3_zero_update_f5_kmeans_softmax_seed44] 001/50 test=0.1000 TPR=0.000 FPR=0.333 accepted=[0, 1, 3, 4, 5, 6, 7]
+[day3_zero_update_f5_kmeans_softmax_seed44] 005/50 test=0.1000 TPR=0.000 FPR=0.333 accepted=[0, 1, 2, 3, 5, 6, 7]
+[day3_zero_update_f5_kmeans_softmax_seed44] 010/50 test=0.1628 TPR=0.000 FPR=0.333 accepted=[0, 1, 2, 3, 4, 6, 7]
+[day3_zero_update_f5_kmeans_softmax_seed44] 015/50 test=0.3519 TPR=0.000 FPR=0.333 accepted=[0, 1, 2, 3, 4, 6, 7]
+[day3_zero_update_f5_kmeans_softmax_seed44] 020/50 test=0.4334 TPR=1.000 FPR=0.000 accepted=[2, 4, 5]
+[day3_zero_update_f5_kmeans_softmax_seed44] 025/50 test=0.4899 TPR=1.000 FPR=0.000 accepted=[2, 4, 5]
+[day3_zero_update_f5_kmeans_softmax_seed44] 030/50 test=0.5132 TPR=1.000 FPR=0.000 accepted=[2, 4, 5]
+[day3_zero_update_f5_kmeans_softmax_seed44] 035/50 test=0.5344 TPR=1.000 FPR=0.000 accepted=[2, 4, 5]
+[day3_zero_update_f5_kmeans_softmax_seed44] 040/50 test=0.5501 TPR=0.000 FPR=0.333 accepted=[0, 1, 3, 4, 5, 6, 7]
+[day3_zero_update_f5_kmeans_softmax_seed44] 045/50 test=0.5934 TPR=1.000 FPR=0.000 accepted=[2, 4, 5]
+[day3_zero_update_f5_kmeans_softmax_seed44] 050/50 test=0.6149 TPR=0.000 FPR=0.333 accepted=[0, 1, 3, 4, 5, 6, 7]
+[bundle_03_of_08] starting 12/15: {"aggregation":"softmax","attack":"zero_update","cost":1.0,"day":3,"detector":"krum","epochs":50,"kind":"federated","n_malicious":5,"seed":43}
+[day3_zero_update_f5_krum_softmax_seed43] 001/50 test=0.1000 TPR=0.400 FPR=1.000 accepted=[0, 2, 5]
+[day3_zero_update_f5_krum_softmax_seed43] 005/50 test=0.1000 TPR=0.400 FPR=1.000 accepted=[0, 2, 5]
+[day3_zero_update_f5_krum_softmax_seed43] 010/50 test=0.1000 TPR=0.400 FPR=1.000 accepted=[0, 2, 4]
+[day3_zero_update_f5_krum_softmax_seed43] 015/50 test=0.1000 TPR=0.400 FPR=1.000 accepted=[0, 2, 5]
+[day3_zero_update_f5_krum_softmax_seed43] 020/50 test=0.1000 TPR=0.400 FPR=1.000 accepted=[0, 2, 5]
+[day3_zero_update_f5_krum_softmax_seed43] 025/50 test=0.1000 TPR=0.400 FPR=1.000 accepted=[0, 2, 5]
+[day3_zero_update_f5_krum_softmax_seed43] 030/50 test=0.1000 TPR=0.400 FPR=1.000 accepted=[0, 2, 5]
+[day3_zero_update_f5_krum_softmax_seed43] 035/50 test=0.1000 TPR=0.400 FPR=1.000 accepted=[0, 2, 5]
+[day3_zero_update_f5_krum_softmax_seed43] 040/50 test=0.1000 TPR=0.400 FPR=1.000 accepted=[0, 2, 5]
+[day3_zero_update_f5_krum_softmax_seed43] 045/50 test=0.1000 TPR=0.400 FPR=1.000 accepted=[0, 2, 5]
+[day3_zero_update_f5_krum_softmax_seed43] 050/50 test=0.1000 TPR=0.400 FPR=1.000 accepted=[0, 2, 5]
+[bundle_03_of_08] starting 13/15: {"aggregation":"topk","attack":"mean_shift","cost":0.6,"day":10,"detector":"krum","epochs":30,"kind":"federated","label":"plus_krum_topk","n_malicious":2,"seed":42}
+[day10_plus_krum_topk_seed42] 001/30 test=0.1000 TPR=0.000 FPR=0.333 accepted=[0, 1, 3, 4, 5, 6]
+[day10_plus_krum_topk_seed42] 005/30 test=0.1393 TPR=0.000 FPR=0.333 accepted=[1, 2, 4, 5, 6, 7]
+[day10_plus_krum_topk_seed42] 010/30 test=0.3175 TPR=0.000 FPR=0.333 accepted=[1, 2, 4, 5, 6, 7]
+[day10_plus_krum_topk_seed42] 015/30 test=0.3883 TPR=0.000 FPR=0.333 accepted=[1, 2, 3, 4, 6, 7]
+[day10_plus_krum_topk_seed42] 020/30 test=0.4423 TPR=0.000 FPR=0.333 accepted=[0, 1, 4, 5, 6, 7]
+[day10_plus_krum_topk_seed42] 025/30 test=0.4567 TPR=0.000 FPR=0.333 accepted=[1, 2, 3, 4, 6, 7]
+[day10_plus_krum_topk_seed42] 030/30 test=0.4892 TPR=0.000 FPR=0.333 accepted=[1, 3, 4, 5, 6, 7]
+[bundle_03_of_08] starting 14/15: {"attack":"gaussian_activation","cost":0.5,"day":6,"detector_name":"none","kind":"day6","seed":43}
+[day6_gaussian_activation_none_seed43] 01/20 val=0.1110 test(report)=0.1096 TPR=0.000 FPR=0.000
+[day6_gaussian_activation_none_seed43] 02/20 val=0.1580 test(report)=0.1557 TPR=0.000 FPR=0.000
+[day6_gaussian_activation_none_seed43] 03/20 val=0.2038 test(report)=0.2019 TPR=0.000 FPR=0.000
+[day6_gaussian_activation_none_seed43] 04/20 val=0.2368 test(report)=0.2455 TPR=0.000 FPR=0.000
+[day6_gaussian_activation_none_seed43] 05/20 val=0.2466 test(report)=0.2524 TPR=0.000 FPR=0.000
+[day6_gaussian_activation_none_seed43] 06/20 val=0.2952 test(report)=0.2854 TPR=0.000 FPR=0.000
+[day6_gaussian_activation_none_seed43] 07/20 val=0.3508 test(report)=0.3593 TPR=0.000 FPR=0.000
+[day6_gaussian_activation_none_seed43] 08/20 val=0.3956 test(report)=0.4079 TPR=0.000 FPR=0.000
+[day6_gaussian_activation_none_seed43] 09/20 val=0.4088 test(report)=0.4203 TPR=0.000 FPR=0.000
+[day6_gaussian_activation_none_seed43] 10/20 val=0.4504 test(report)=0.4590 TPR=0.000 FPR=0.000
+[day6_gaussian_activation_none_seed43] 11/20 val=0.4656 test(report)=0.4751 TPR=0.000 FPR=0.000
+[day6_gaussian_activation_none_seed43] 12/20 val=0.5110 test(report)=0.5165 TPR=0.000 FPR=0.000
+[day6_gaussian_activation_none_seed43] 13/20 val=0.5078 test(report)=0.5152 TPR=0.000 FPR=0.000
+[day6_gaussian_activation_none_seed43] 14/20 val=0.5440 test(report)=0.5459 TPR=0.000 FPR=0.000
+[day6_gaussian_activation_none_seed43] 15/20 val=0.6000 test(report)=0.5941 TPR=0.000 FPR=0.000
+[day6_gaussian_activation_none_seed43] 16/20 val=0.5776 test(report)=0.5815 TPR=0.000 FPR=0.000
+[day6_gaussian_activation_none_seed43] 17/20 val=0.6038 test(report)=0.5951 TPR=0.000 FPR=0.000
+[day6_gaussian_activation_none_seed43] 18/20 val=0.6136 test(report)=0.6254 TPR=0.000 FPR=0.000
+[day6_gaussian_activation_none_seed43] 19/20 val=0.6128 test(report)=0.6179 TPR=0.000 FPR=0.000
+[day6_gaussian_activation_none_seed43] 20/20 val=0.6064 test(report)=0.6056 TPR=0.000 FPR=0.000
+[bundle_03_of_08] starting 15/15: {"attack":"zero_activation","cost":0.5,"day":6,"detector_name":"activation_norm","kind":"day6","seed":42}
+[day6_zero_activation_activation_norm_seed42] 01/20 val=0.1100 test(report)=0.1000 TPR=1.000 FPR=1.000
+[day6_zero_activation_activation_norm_seed42] 02/20 val=0.1076 test(report)=0.1000 TPR=1.000 FPR=1.000
+[day6_zero_activation_activation_norm_seed42] 03/20 val=0.0956 test(report)=0.1000 TPR=1.000 FPR=1.000
+[day6_zero_activation_activation_norm_seed42] 04/20 val=0.0956 test(report)=0.1000 TPR=1.000 FPR=1.000
+[day6_zero_activation_activation_norm_seed42] 05/20 val=0.0960 test(report)=0.1000 TPR=1.000 FPR=1.000
+[day6_zero_activation_activation_norm_seed42] 06/20 val=0.0972 test(report)=0.1000 TPR=1.000 FPR=1.000
+[day6_zero_activation_activation_norm_seed42] 07/20 val=0.0972 test(report)=0.1000 TPR=1.000 FPR=1.000
+[day6_zero_activation_activation_norm_seed42] 08/20 val=0.0956 test(report)=0.1000 TPR=1.000 FPR=1.000
+[day6_zero_activation_activation_norm_seed42] 09/20 val=0.1032 test(report)=0.1000 TPR=1.000 FPR=1.000
+[day6_zero_activation_activation_norm_seed42] 10/20 val=0.1014 test(report)=0.1000 TPR=1.000 FPR=1.000
+[day6_zero_activation_activation_norm_seed42] 11/20 val=0.1032 test(report)=0.1000 TPR=1.000 FPR=1.000
+[day6_zero_activation_activation_norm_seed42] 12/20 val=0.0904 test(report)=0.1000 TPR=1.000 FPR=1.000
+[day6_zero_activation_activation_norm_seed42] 13/20 val=0.0960 test(report)=0.1000 TPR=1.000 FPR=1.000
+[day6_zero_activation_activation_norm_seed42] 14/20 val=0.0988 test(report)=0.1000 TPR=1.000 FPR=1.000
+[day6_zero_activation_activation_norm_seed42] 15/20 val=0.0904 test(report)=0.1000 TPR=1.000 FPR=1.000
+[day6_zero_activation_activation_norm_seed42] 16/20 val=0.0904 test(report)=0.1000 TPR=1.000 FPR=1.000
+[day6_zero_activation_activation_norm_seed42] 17/20 val=0.0956 test(report)=0.1000 TPR=1.000 FPR=1.000
+[day6_zero_activation_activation_norm_seed42] 18/20 val=0.1076 test(report)=0.1000 TPR=1.000 FPR=1.000
+[day6_zero_activation_activation_norm_seed42] 19/20 val=0.0960 test(report)=0.1000 TPR=1.000 FPR=1.000
+[day6_zero_activation_activation_norm_seed42] 20/20 val=0.0960 test(report)=0.1000 TPR=1.000 FPR=1.000
+bundle_complete=true

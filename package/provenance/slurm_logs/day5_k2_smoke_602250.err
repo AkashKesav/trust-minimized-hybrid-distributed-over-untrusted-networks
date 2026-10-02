@@ -1,0 +1,18 @@
+/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at /opt/conda/conda-bld/pytorch_1708025831440/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at /opt/conda/conda-bld/pytorch_1708025831440/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+Traceback (most recent call last):
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 3069, in <module>
+    main()
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 3059, in main
+    run_day5_distributed(seed=arguments.seed, shards=arguments.shards)
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 2124, in run_day5_distributed
+    train_loss, train_acc, epoch_time = distributed_pipeline_train_epoch(
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 1947, in distributed_pipeline_train_epoch
+    raise FloatingPointError("Non-finite Day 5 pipeline loss")
+FloatingPointError: Non-finite Day 5 pipeline loss
+srun: error: rsgpu016: task 1: Exited with exit code 1
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 602250.0 ON rsgpu016 CANCELLED AT 2026-08-15T19:31:25 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 602250 ON rsgpu016 CANCELLED AT 2026-08-15T19:31:25 DUE TO TIME LIMIT ***

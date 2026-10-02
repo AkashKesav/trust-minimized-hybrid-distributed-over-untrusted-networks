@@ -1,0 +1,178 @@
+rsgpu021:888652:888652 [0] NCCL INFO Bootstrap : Using ib0:172.31.3.21<0>
+rsgpu021:888652:888652 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+rsgpu021:888652:888652 [0] NCCL INFO cudaDriverVersion 12040
+NCCL version 2.19.3+cuda11.8
+output:      /scratch/mm24r002/paper_rerun_20260815/results/day5_smoke
+config hash: b796ba94ab17a7c0
+run days:    [1, 2, 3, 4, 5, 6, 7, 10]
+seeds:       (42,)
+{
+  "created_utc": "2026-08-16T09:22:59Z",
+  "config": {
+    "output_root": "/scratch/mm24r002/paper_rerun_20260815/results/day5_smoke",
+    "data_root": "/scratch/mm24r002/paper_rerun_20260815/data",
+    "model_architecture": "torchvision_resnet50_standard_stem_cifar10_head",
+    "model_num_classes": 10,
+    "model_parameter_count": 23528522,
+    "seeds": [
+      42
+    ],
+    "split_seed": 20260815,
+    "train_size": 45000,
+    "validation_size": 5000,
+    "test_size": 10000,
+    "batch_size": 128,
+    "loader_workers": 0,
+    "learning_rate": 0.1,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "nesterov": true,
+    "lr_milestones": [
+      100,
+      150
+    ],
+    "lr_gamma": 0.1,
+    "temperature": 0.1,
+    "use_bfloat16_amp": true,
+    "deterministic": true,
+    "n_workers": 8,
+    "day1_epochs": 2,
+    "day3_epochs": 2,
+    "day4_epochs": 1,
+    "day4_benchmark_warmup": 0,
+    "day4_benchmark_runs": 1,
+    "day5_epochs": 2,
+    "day6_epochs": 2,
+    "day7_epochs": 2,
+    "day10_epochs": 2,
+    "gaussian_covariance": 30.0,
+    "mean_shift_scale": 1.0,
+    "majority_scale": 5.0,
+    "save_checkpoints": false,
+    "checkpoint_interval": 1
+  },
+  "config_hash": "b796ba94ab17a7c0",
+  "run_days": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    10
+  ],
+  "smoke_test": true,
+  "python": "3.10.13",
+  "platform": "Linux-4.18.0-513.5.1.el8_9.x86_64-x86_64-with-glibc2.28",
+  "torch": "2.2.1",
+  "torchvision": "0.17.1",
+  "cuda_runtime": "11.8",
+  "cudnn": 8700,
+  "numpy": "1.26.4",
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA A100 80GB PCIe",
+      "total_memory_bytes": 84974239744,
+      "compute_capability": "8.0"
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA A100 80GB PCIe",
+      "total_memory_bytes": 84974239744,
+      "compute_capability": "8.0"
+    }
+  ],
+  "scope_note": "Algorithm-level DGX simulation; no real blockchain/network/VRF proof execution."
+}
+Files already downloaded and verified
+Files already downloaded and verified
+[day5_k2_seed42] 001/2 train=0.1635 val=0.2034 test(report)=0.1987 throughput=1105.9/s
+[day5_k2_seed42] 002/2 train=0.2219 val=0.2502 test(report)=0.2517 throughput=2270.2/s
+rsgpu021:888653:888653 [1] NCCL INFO cudaDriverVersion 12040
+rsgpu021:888653:888653 [1] NCCL INFO Bootstrap : Using ib0:172.31.3.21<0>
+rsgpu021:888653:888653 [1] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+rsgpu021:888653:888744 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.31.3.21<0>
+rsgpu021:888653:888744 [1] NCCL INFO Using non-device net plugin version 0
+rsgpu021:888653:888744 [1] NCCL INFO Using network IB
+rsgpu021:888653:888744 [1] NCCL INFO comm 0x9925890 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 5e000 commId 0xa94e059900dc8c4c - Init START
+rsgpu021:888653:888744 [1] NCCL INFO Setting affinity for GPU 1 to ff
+rsgpu021:888653:888744 [1] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] -1/-1/-1->1->0
+rsgpu021:888653:888744 [1] NCCL INFO P2P Chunksize set to 131072
+rsgpu021:888653:888744 [1] NCCL INFO Channel 00 : 1[1] -> 0[0] via SHM/direct/direct
+rsgpu021:888653:888744 [1] NCCL INFO Channel 01 : 1[1] -> 0[0] via SHM/direct/direct
+rsgpu021:888653:888744 [1] NCCL INFO Connected all rings
+rsgpu021:888653:888744 [1] NCCL INFO Connected all trees
+rsgpu021:888653:888744 [1] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+rsgpu021:888653:888744 [1] NCCL INFO 2 coll channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+rsgpu021:888653:888744 [1] NCCL INFO comm 0x9925890 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 5e000 commId 0xa94e059900dc8c4c - Init COMPLETE
+rsgpu021:888653:888770 [1] NCCL INFO Using non-device net plugin version 0
+rsgpu021:888653:888770 [1] NCCL INFO Using network IB
+rsgpu021:888653:888770 [1] NCCL INFO comm 0x9f08da0 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 5e000 commId 0x31f0e794175ba234 - Init START
+rsgpu021:888653:888770 [1] NCCL INFO Setting affinity for GPU 1 to ff
+rsgpu021:888653:888770 [1] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] -1/-1/-1->1->0
+rsgpu021:888653:888770 [1] NCCL INFO P2P Chunksize set to 131072
+rsgpu021:888653:888770 [1] NCCL INFO Channel 00 : 1[1] -> 0[0] via SHM/direct/direct
+rsgpu021:888653:888770 [1] NCCL INFO Channel 01 : 1[1] -> 0[0] via SHM/direct/direct
+rsgpu021:888653:888770 [1] NCCL INFO Connected all rings
+rsgpu021:888653:888770 [1] NCCL INFO Connected all trees
+rsgpu021:888653:888770 [1] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+rsgpu021:888653:888770 [1] NCCL INFO 2 coll channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+rsgpu021:888653:888770 [1] NCCL INFO comm 0x9f08da0 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 5e000 commId 0x31f0e794175ba234 - Init COMPLETE
+rsgpu021:888653:888780 [1] NCCL INFO Channel 00 : 1[1] -> 0[0] via SHM/direct/direct
+rsgpu021:888653:888780 [1] NCCL INFO Channel 01 : 1[1] -> 0[0] via SHM/direct/direct
+rsgpu021:888653:888772 [1] NCCL INFO [Service thread] Connection closed by localRank 1
+rsgpu021:888653:888653 [1] NCCL INFO comm 0x9f08da0 rank 1 nranks 2 cudaDev 1 busId 5e000 - Abort COMPLETE
+rsgpu021:888653:888747 [1] NCCL INFO [Service thread] Connection closed by localRank 1
+rsgpu021:888653:888653 [1] NCCL INFO comm 0x9925890 rank 1 nranks 2 cudaDev 1 busId 5e000 - Abort COMPLETE
+rsgpu021:888652:888743 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.31.3.21<0>
+rsgpu021:888652:888743 [0] NCCL INFO Using non-device net plugin version 0
+rsgpu021:888652:888743 [0] NCCL INFO Using network IB
+rsgpu021:888652:888743 [0] NCCL INFO comm 0x7d52070 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 3b000 commId 0xa94e059900dc8c4c - Init START
+rsgpu021:888652:888743 [0] NCCL INFO Setting affinity for GPU 0 to ff
+rsgpu021:888652:888743 [0] NCCL INFO Channel 00/02 :    0   1
+rsgpu021:888652:888743 [0] NCCL INFO Channel 01/02 :    0   1
+rsgpu021:888652:888743 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1
+rsgpu021:888652:888743 [0] NCCL INFO P2P Chunksize set to 131072
+rsgpu021:888652:888743 [0] NCCL INFO Channel 00 : 0[0] -> 1[1] via SHM/direct/direct
+rsgpu021:888652:888743 [0] NCCL INFO Channel 01 : 0[0] -> 1[1] via SHM/direct/direct
+rsgpu021:888652:888743 [0] NCCL INFO Connected all rings
+rsgpu021:888652:888743 [0] NCCL INFO Connected all trees
+rsgpu021:888652:888743 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+rsgpu021:888652:888743 [0] NCCL INFO 2 coll channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+rsgpu021:888652:888743 [0] NCCL INFO comm 0x7d52070 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 3b000 commId 0xa94e059900dc8c4c - Init COMPLETE
+rsgpu021:888652:888769 [0] NCCL INFO Using non-device net plugin version 0
+rsgpu021:888652:888769 [0] NCCL INFO Using network IB
+rsgpu021:888652:888769 [0] NCCL INFO comm 0xeb88700 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 3b000 commId 0x31f0e794175ba234 - Init START
+rsgpu021:888652:888769 [0] NCCL INFO Setting affinity for GPU 0 to ff
+rsgpu021:888652:888769 [0] NCCL INFO Channel 00/02 :    0   1
+rsgpu021:888652:888769 [0] NCCL INFO Channel 01/02 :    0   1
+rsgpu021:888652:888769 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1
+rsgpu021:888652:888769 [0] NCCL INFO P2P Chunksize set to 131072
+rsgpu021:888652:888769 [0] NCCL INFO Channel 00 : 0[0] -> 1[1] via SHM/direct/direct
+rsgpu021:888652:888769 [0] NCCL INFO Channel 01 : 0[0] -> 1[1] via SHM/direct/direct
+rsgpu021:888652:888769 [0] NCCL INFO Connected all rings
+rsgpu021:888652:888769 [0] NCCL INFO Connected all trees
+rsgpu021:888652:888769 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+rsgpu021:888652:888769 [0] NCCL INFO 2 coll channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+rsgpu021:888652:888769 [0] NCCL INFO comm 0xeb88700 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 3b000 commId 0x31f0e794175ba234 - Init COMPLETE
+rsgpu021:888652:888776 [0] NCCL INFO Channel 00 : 0[0] -> 1[1] via SHM/direct/direct
+rsgpu021:888652:888776 [0] NCCL INFO Channel 01 : 0[0] -> 1[1] via SHM/direct/direct
+rsgpu021:888652:888771 [0] NCCL INFO [Service thread] Connection closed by localRank 0
+rsgpu021:888652:888652 [0] NCCL INFO comm 0xeb88700 rank 0 nranks 2 cudaDev 0 busId 3b000 - Abort COMPLETE
+rsgpu021:888652:888748 [0] NCCL INFO [Service thread] Connection closed by localRank 0
+rsgpu021:888652:888652 [0] NCCL INFO comm 0x7d52070 rank 0 nranks 2 cudaDev 0 busId 3b000 - Abort COMPLETE
+{
+  "checked_primary_csvs": 1,
+  "checked_rank_manifests": 2,
+  "checked_summaries": 1,
+  "checked_worker_csvs": 0,
+  "errors": [],
+  "hashed_files": 14,
+  "mode": "day5-smoke",
+  "passed": true,
+  "root": "/scratch/mm24r002/paper_rerun_20260815/results/day5_smoke",
+  "warnings": []
+}
+day5_k2_smoke_complete=true

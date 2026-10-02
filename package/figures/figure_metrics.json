@@ -1,0 +1,207 @@
+{
+  "day10_ablation_detection": {
+    "kmeans": "collapsed",
+    "krum_tpr": 1.0
+  },
+  "day10_ablation_training": {
+    "K-means\n+ Top-K": 0.4361333333333333,
+    "Krum\n+ Top-K": 0.49496666666666667
+  },
+  "day1_final_test_mean": 0.8842,
+  "day2_final_summary": [
+    {
+      "aggregation": "softmax",
+      "mean": 0.8781333333333334,
+      "n_workers": 2.0,
+      "std": 0.0014977761292440342
+    },
+    {
+      "aggregation": "topk",
+      "mean": 0.8715666666666667,
+      "n_workers": 2.0,
+      "std": 0.003827967258654771
+    },
+    {
+      "aggregation": "softmax",
+      "mean": 0.8546999999999999,
+      "n_workers": 4.0,
+      "std": 0.0015874507866387893
+    },
+    {
+      "aggregation": "topk",
+      "mean": 0.8500333333333333,
+      "n_workers": 4.0,
+      "std": 0.006384616929255334
+    },
+    {
+      "aggregation": "softmax",
+      "mean": 0.8297333333333333,
+      "n_workers": 8.0,
+      "std": 0.0002516611478423306
+    },
+    {
+      "aggregation": "topk",
+      "mean": 0.8106333333333332,
+      "n_workers": 8.0,
+      "std": 0.006073988255943018
+    }
+  ],
+  "day2_n2_softmax_final_test_mean": 0.8781333333333333,
+  "day2_n4_softmax_final_test_mean": 0.8546999999999999,
+  "day2_n8_softmax_final_test_mean": 0.8297333333333333,
+  "day3_byzantine_majority_f2_final_test_mean": 0.6177333333333332,
+  "day3_byzantine_majority_f4_final_test_mean": null,
+  "day3_byzantine_majority_f5_final_test_mean": null,
+  "day3_gaussian_f2_final_test_mean": 0.6035666666666666,
+  "day3_gaussian_f4_final_test_mean": 0.5824999999999999,
+  "day3_gaussian_f5_final_test_mean": 0.5722,
+  "day3_mean_shift_f2_final_test_mean": 0.6419333333333334,
+  "day3_mean_shift_f4_final_test_mean": 0.41440000000000005,
+  "day3_mean_shift_f5_final_test_mean": 0.5343999999999999,
+  "day3_zero_update_f2_final_test_mean": 0.6226333333333334,
+  "day3_zero_update_f4_final_test_mean": 0.10000000000000002,
+  "day3_zero_update_f5_final_test_mean": 0.10000000000000002,
+  "day4_overhead": [
+    {
+      "aggregation_ms_mean": 63.61406669020652,
+      "aggregation_ms_std": 2.499104829954341,
+      "commit_reveal_ms_mean": 0.0,
+      "commit_reveal_ms_std": 0.0,
+      "configuration": "tdml_reconstruction",
+      "detector_ms_mean": 22.69867869714896,
+      "detector_ms_std": 0.9439743908520415,
+      "overhead_pct_mean": 0.0,
+      "overhead_pct_std": 0.0,
+      "sync_ms_mean": 42.93552289406458,
+      "sync_ms_std": 1.6511116258077987,
+      "total_ms_mean": 12905.12478351593,
+      "total_ms_std": 242.75919900653102,
+      "training_ms_mean": 8892.885537197193,
+      "training_ms_std": 176.2938226680321,
+      "validation_ms_mean": 3882.8979587803283,
+      "validation_ms_std": 90.74309252086313
+    },
+    {
+      "aggregation_ms_mean": 84.11576267745761,
+      "aggregation_ms_std": 2.816543261315759,
+      "commit_reveal_ms_mean": 0.0,
+      "commit_reveal_ms_std": 0.0,
+      "configuration": "ours_without_commit_reveal",
+      "detector_ms_mean": 26.101545534200138,
+      "detector_ms_std": 0.5922669267310648,
+      "overhead_pct_mean": 1.5432614381151792,
+      "overhead_pct_std": 2.1945483370458962,
+      "sync_ms_mean": 42.82681830227375,
+      "sync_ms_std": 2.076108270210235,
+      "total_ms_mean": 13102.696554114422,
+      "total_ms_std": 280.59269412203764,
+      "training_ms_mean": 9006.371305427618,
+      "training_ms_std": 303.3037498137782,
+      "validation_ms_mean": 3943.195657597648,
+      "validation_ms_std": 134.72483634468452
+    },
+    {
+      "aggregation_ms_mean": 88.58207530445522,
+      "aggregation_ms_std": 3.820350036443704,
+      "commit_reveal_ms_mean": 3980.676872241828,
+      "commit_reveal_ms_std": 82.4815690072761,
+      "configuration": "ours_with_commit_reveal",
+      "detector_ms_mean": 24.948428695400555,
+      "detector_ms_std": 0.6014335191450648,
+      "overhead_pct_mean": 32.91865183894974,
+      "overhead_pct_std": 4.633529963278159,
+      "sync_ms_mean": 45.270236829916634,
+      "sync_ms_std": 2.043304569331785,
+      "total_ms_mean": 17149.302802152102,
+      "total_ms_std": 508.9592670877065,
+      "training_ms_mean": 9022.271054072511,
+      "training_ms_std": 462.4884148565203,
+      "validation_ms_mean": 3987.4718936367167,
+      "validation_ms_std": 126.85415186011271
+    }
+  ],
+  "day4_standalone": [
+    {
+      "component": "commit_phase",
+      "mean": 1970.7039328912895,
+      "std": 53.065892615444945
+    },
+    {
+      "component": "full_commit_reveal",
+      "mean": 3896.83588941892,
+      "std": 46.59417640598129
+    },
+    {
+      "component": "kmeans_detection",
+      "mean": 17.383829752604168,
+      "std": 2.7081848369027948
+    },
+    {
+      "component": "one_shot_krum_score_filter",
+      "mean": 21.58956614633401,
+      "std": 2.7464251118048035
+    },
+    {
+      "component": "softmax_aggregation",
+      "mean": 99.56329663594563,
+      "std": 13.912494763639618
+    },
+    {
+      "component": "topk_aggregation",
+      "mean": 74.06549428900082,
+      "std": 10.149856328271811
+    },
+    {
+      "component": "verify_phase",
+      "mean": 1970.7594660421212,
+      "std": 42.97556346133739
+    }
+  ],
+  "day5_k2_final3_epoch_time_sec_mean": 7.921690378700279,
+  "day5_k2_final3_epoch_time_sec_std": 0.13026661536171444,
+  "day5_k2_final3_samples_per_second_mean": 5682.639815609383,
+  "day5_k2_final3_samples_per_second_std": 92.0346981516752,
+  "day5_k2_final_test_mean": 0.8836,
+  "day5_k2_final_test_std": 0.0035594943461115646,
+  "day5_k4_final3_epoch_time_sec_mean": 14.640742147005058,
+  "day5_k4_final3_epoch_time_sec_std": 0.018346663411066076,
+  "day5_k4_final3_samples_per_second_mean": 3073.62352489915,
+  "day5_k4_final3_samples_per_second_std": 3.849104811976519,
+  "day5_k4_final_test_mean": 0.8836,
+  "day5_k4_final_test_std": 0.0035594943461115646,
+  "day6_gaussian_activation_activation_norm_final_test_mean": 0.6608,
+  "day6_gaussian_activation_activation_norm_mean_tpr": 1.0,
+  "day6_gaussian_activation_none_final_test_mean": 0.6608,
+  "day6_gaussian_activation_none_mean_tpr": 0.0,
+  "day6_sign_flip_activation_norm_final_test_mean": 0.6778000000000001,
+  "day6_sign_flip_activation_norm_mean_tpr": 1.0,
+  "day6_sign_flip_none_final_test_mean": 0.6778000000000001,
+  "day6_sign_flip_none_mean_tpr": 0.0,
+  "day6_zero_activation_activation_norm_final_test_mean": 0.10000000000000002,
+  "day6_zero_activation_activation_norm_mean_tpr": 1.0,
+  "day6_zero_activation_none_final_test_mean": 0.10000000000000002,
+  "day6_zero_activation_none_mean_tpr": 0.0,
+  "day8_speed_gini": 0.875,
+  "day8_vrf_counts": [
+    20.2,
+    22.2,
+    23.0,
+    24.8,
+    27.2,
+    27.2,
+    26.8,
+    28.6
+  ],
+  "day8_vrf_entropy_mean": 2.9690405007008462,
+  "day8_vrf_gini": 0.11275000000000004,
+  "day8_vrf_gini_of_mean_counts": 0.06150000000000011,
+  "day8_vrf_gini_std": 0.024001953045533587,
+  "day8_vrf_pearson_mean": 0.4860011618985164,
+  "day8_vrf_pearson_std": 0.26241937599797555,
+  "day9_event_rows": 10,
+  "day9_evicted_nodes": [
+    2,
+    5
+  ],
+  "day9_history_rows": 800
+}

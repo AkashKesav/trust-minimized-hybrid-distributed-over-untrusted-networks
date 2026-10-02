@@ -1,0 +1,7 @@
+attack,detector,validation_selected_test_mean,validation_selected_test_sd,final_test_mean,mean_tpr,mean_fpr
+zero_activation,none,0.1,0.0,0.1,0.0,0.0
+zero_activation,activation_norm,0.1,0.0,0.1,1.0,1.0
+gaussian_activation,none,0.6763666666666667,0.04624298144944087,0.6608,0.0,0.0
+gaussian_activation,activation_norm,0.6763666666666667,0.04624298144944087,0.6608,1.0,1.0
+sign_flip,none,0.6778000000000001,0.021673024708148147,0.6778000000000001,0.0,0.0
+sign_flip,activation_norm,0.6778000000000001,0.021673024708148147,0.6778000000000001,1.0,1.0

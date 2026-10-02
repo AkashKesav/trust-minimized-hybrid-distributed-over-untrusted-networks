@@ -1,0 +1,38 @@
+rsgpu018:129836:129836 [0] NCCL INFO Bootstrap : Using ib0:172.31.3.18<0>
+rsgpu018:129836:129836 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+rsgpu018:129836:129836 [0] NCCL INFO cudaDriverVersion 12040
+NCCL version 2.19.3+cuda11.8
+rsgpu018:129837:129837 [1] NCCL INFO cudaDriverVersion 12040
+rsgpu018:129837:129837 [1] NCCL INFO Bootstrap : Using ib0:172.31.3.18<0>
+rsgpu018:129837:129837 [1] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+rsgpu018:129837:129896 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.31.3.18<0>
+rsgpu018:129837:129896 [1] NCCL INFO Using non-device net plugin version 0
+rsgpu018:129837:129896 [1] NCCL INFO Using network IB
+rsgpu018:129837:129896 [1] NCCL INFO comm 0x7d07610 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 5e000 commId 0x27231df408667793 - Init START
+rsgpu018:129837:129896 [1] NCCL INFO Setting affinity for GPU 1 to ff
+rsgpu018:129837:129896 [1] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] -1/-1/-1->1->0
+rsgpu018:129837:129896 [1] NCCL INFO P2P Chunksize set to 131072
+rsgpu018:129837:129896 [1] NCCL INFO Channel 00 : 1[1] -> 0[0] via SHM/direct/direct
+rsgpu018:129837:129896 [1] NCCL INFO Channel 01 : 1[1] -> 0[0] via SHM/direct/direct
+rsgpu018:129837:129896 [1] NCCL INFO Connected all rings
+rsgpu018:129837:129896 [1] NCCL INFO Connected all trees
+rsgpu018:129837:129896 [1] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+rsgpu018:129837:129896 [1] NCCL INFO 2 coll channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+rsgpu018:129837:129896 [1] NCCL INFO comm 0x7d07610 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 5e000 commId 0x27231df408667793 - Init COMPLETE
+rsgpu018:129837:129906 [1] NCCL INFO Using non-device net plugin version 0
+rsgpu018:129837:129906 [1] NCCL INFO Using network IB
+rsgpu018:129837:129906 [1] NCCL INFO comm 0x7e2a420 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 5e000 commId 0x462657826ddc6b5 - Init START
+rsgpu018:129837:129906 [1] NCCL INFO Setting affinity for GPU 1 to ff
+rsgpu018:129837:129906 [1] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] -1/-1/-1->1->0
+rsgpu018:129837:129906 [1] NCCL INFO P2P Chunksize set to 131072
+rsgpu018:129837:129906 [1] NCCL INFO Channel 00 : 1[1] -> 0[0] via SHM/direct/direct
+rsgpu018:129837:129906 [1] NCCL INFO Channel 01 : 1[1] -> 0[0] via SHM/direct/direct
+rsgpu018:129837:129906 [1] NCCL INFO Connected all rings
+rsgpu018:129837:129906 [1] NCCL INFO Connected all trees
+rsgpu018:129837:129906 [1] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+rsgpu018:129837:129906 [1] NCCL INFO 2 coll channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+rsgpu018:129837:129906 [1] NCCL INFO comm 0x7e2a420 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 5e000 commId 0x462657826ddc6b5 - Init COMPLETE
+rsgpu018:129837:129908 [1] NCCL INFO [Service thread] Connection closed by localRank 1
+rsgpu018:129837:129837 [1] NCCL INFO comm 0x7e2a420 rank 1 nranks 2 cudaDev 1 busId 5e000 - Abort COMPLETE
+rsgpu018:129837:129900 [1] NCCL INFO [Service thread] Connection closed by localRank 1
+rsgpu018:129837:129837 [1] NCCL INFO comm 0x7d07610 rank 1 nranks 2 cudaDev 1 busId 5e000 - Abort COMPLETE

@@ -1,0 +1,13 @@
+{
+  "config_hash": "7e267c0bf303542b",
+  "gpu": "NVIDIA A100 80GB PCIe",
+  "hostname": "rsgpu019",
+  "local_rank": 1,
+  "parameter_count": 20490,
+  "rank": 3,
+  "run_name": "day5_k4_seed43",
+  "unit_names": [
+    "head"
+  ],
+  "world_size": 4
+}

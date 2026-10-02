@@ -1,0 +1,16 @@
+{
+  "attack": "clean",
+  "best_validation_acc": 0.687,
+  "best_validation_epoch": 18,
+  "config_hash": "7e267c0bf303542b",
+  "detector": "none",
+  "detector_calibration": "not_applicable",
+  "malicious_stages": [],
+  "mean_fpr": 0.0,
+  "mean_tpr": 0.0,
+  "run_name": "day6_clean_none_seed43",
+  "seed": 43,
+  "status": "complete",
+  "test_acc_at_validation_best": 0.6813,
+  "test_loss_at_validation_best": 0.9169904880523682
+}

@@ -1,0 +1,67 @@
+/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at /opt/conda/conda-bld/pytorch_1708025831440/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at /opt/conda/conda-bld/pytorch_1708025831440/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at /opt/conda/conda-bld/pytorch_1708025831440/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+Traceback (most recent call last):
+  File "/scratch/mm24r002/paper_rerun_20260815/env/hybrid_distributed_runner.py", line 436, in <module>
+    main()
+  File "/scratch/mm24r002/paper_rerun_20260815/env/hybrid_distributed_runner.py", line 322, in main
+    train_loss, train_acc, train_time = pipeline_train_epoch(
+  File "/scratch/mm24r002/paper_rerun_20260815/env/hybrid_distributed_runner.py", line 144, in pipeline_train_epoch
+Traceback (most recent call last):
+  File "/scratch/mm24r002/paper_rerun_20260815/env/hybrid_distributed_runner.py", line 436, in <module>
+    incoming = R.distributed_receive_tensor(rank - 1, device)
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 1944, in distributed_receive_tensor
+    main()
+  File "/scratch/mm24r002/paper_rerun_20260815/env/hybrid_distributed_runner.py", line 322, in main
+    train_loss, train_acc, train_time = pipeline_train_epoch(
+  File "/scratch/mm24r002/paper_rerun_20260815/env/hybrid_distributed_runner.py", line 137, in pipeline_train_epoch
+    R.distributed_send_tensor(output, peer)
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 1938, in distributed_send_tensor
+    dist.recv(header, src=source)
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/distributed/c10d_logger.py", line 72, in wrapper
+    dist.send(header, dst=destination)
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/distributed/c10d_logger.py", line 72, in wrapper
+    return func(*args, **kwargs)
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1703, in recv
+    return func(*args, **kwargs)
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1660, in send
+    default_pg.send([tensor], dst, tag).wait()
+torch.distributed.DistBackendError: NCCL error in: /opt/conda/conda-bld/pytorch_1708025831440/work/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1691, invalid usage (run with NCCL_DEBUG=WARN for details), NCCL version 2.19.3
+ncclInvalidUsage: This usually reflects invalid usage of NCCL library.
+Last error:
+Duplicate GPU detected : rank 0 and rank 1 both on CUDA device 5e000
+    pg.recv([tensor], src, tag).wait()
+torch.distributed.DistBackendError: NCCL error in: /opt/conda/conda-bld/pytorch_1708025831440/work/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1691, invalid usage (run with NCCL_DEBUG=WARN for details), NCCL version 2.19.3
+ncclInvalidUsage: This usually reflects invalid usage of NCCL library.
+Last error:
+Duplicate GPU detected : rank 1 and rank 0 both on CUDA device 5e000
+srun: error: rsgpu021: task 3: Exited with exit code 1
+srun: error: rsgpu021: task 2: Exited with exit code 1
+Traceback (most recent call last):
+  File "/scratch/mm24r002/paper_rerun_20260815/env/hybrid_distributed_runner.py", line 436, in <module>
+    main()
+  File "/scratch/mm24r002/paper_rerun_20260815/env/hybrid_distributed_runner.py", line 333, in main
+    dist.all_gather(gathered_vectors, replica_vector, group=world_group)
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/distributed/c10d_logger.py", line 72, in wrapper
+    return func(*args, **kwargs)
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 2617, in all_gather
+    work = group.allgather([tensor_list], [tensor])
+ValueError: Tensor list input to scatter/gather must match number of collective participants but got 2 inputs with world_size 4 and 1 devices.
+srun: error: rsgpu020: task 1: Exited with exit code 1
+[rank0]:[E ProcessGroupNCCL.cpp:523] [Rank 0] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=4, OpType=ALLGATHER, NumelIn=14582848, NumelOut=29165696, Timeout(ms)=600000) ran for 600747 milliseconds before timing out.
+[rank0]:[E ProcessGroupNCCL.cpp:537] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank0]:[E ProcessGroupNCCL.cpp:543] To avoid data inconsistency, we are taking the entire process down.
+[rank0]:[E ProcessGroupNCCL.cpp:1182] [Rank 0] NCCL watchdog thread terminated with exception: [Rank 0] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=4, OpType=ALLGATHER, NumelIn=14582848, NumelOut=29165696, Timeout(ms)=600000) ran for 600747 milliseconds before timing out.
+Exception raised from checkTimeout at /opt/conda/conda-bld/pytorch_1708025831440/work/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:525 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x57 (0x7fd8a3f7fd87 in /home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x1e6 (0x7fd8a5118d26 in /home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::workCleanupLoop() + 0x19d (0x7fd8a511c27d in /home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x119 (0x7fd8a511ce79 in /home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0xdbbf4 (0x7fd901cd5bf4 in /home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/lib/../../../.././libstdc++.so.6)
+frame #5: <unknown function> + 0x81ca (0x7fd917e561ca in /lib64/libpthread.so.0)
+frame #6: clone + 0x43 (0x7fd9173278d3 in /lib64/libc.so.6)
+
+srun: error: rsgpu020: task 0: Aborted (core dumped)

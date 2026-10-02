@@ -1,0 +1,58 @@
+timestamp=2026-08-15T01:16:12+05:30
+hostname=rsgpu013
+job_id=602124
+cuda_visible_devices=0
+GPU 0: NVIDIA A100 80GB PCIe (UUID: GPU-2e26b685-9171-6d74-6df8-6270cec2772e)
+0, NVIDIA A100 80GB PCIe, 81920 MiB, 550.54.14, P0
+	[4mGPU0	NIC0	CPU Affinity	NUMA Affinity	GPU NUMA ID[0m
+GPU0	 X 	SYS	0-1	0		N/A
+NIC0	SYS	 X 				
+
+Legend:
+
+  X    = Self
+  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)
+  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node
+  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)
+  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)
+  PIX  = Connection traversing at most a single PCIe bridge
+  NV#  = Connection traversing a bonded set of # NVLinks
+
+NIC Legend:
+
+  NIC0: mlx5_0
+
+{
+  "python": "3.10.13 (main, Sep 11 2023, 13:44:35) [GCC 11.2.0]",
+  "platform": "Linux-4.18.0-513.5.1.el8_9.x86_64-x86_64-with-glibc2.28",
+  "modules": {
+    "torch": "2.2.1",
+    "torchvision": "0.17.1",
+    "numpy": "1.26.4",
+    "pandas": "ERROR: ModuleNotFoundError: No module named 'pandas'",
+    "sklearn": "ERROR: ModuleNotFoundError: No module named 'sklearn'",
+    "matplotlib": "ERROR: ModuleNotFoundError: No module named 'matplotlib'",
+    "joblib": "ERROR: ModuleNotFoundError: No module named 'joblib'"
+  },
+  "torch_cuda_runtime": "11.8",
+  "cudnn": 8700,
+  "cuda_available": true,
+  "cuda_device_count": 1,
+  "nccl_available": true,
+  "devices": [
+    {
+      "index": 0,
+      "name": "NVIDIA A100 80GB PCIe",
+      "capability": [
+        8,
+        0
+      ],
+      "memory_bytes": 84974239744
+    }
+  ],
+  "cuda_smoke_checksum": 66.26631164550781
+}
+Filesystem                                                                                                                                                Size  Used Avail Use% Mounted on
+172.31.0.101@o2ib,172.31.0.102@o2ib:172.31.0.103@o2ib,172.31.0.104@o2ib:172.31.0.105@o2ib,172.31.0.106@o2ib:172.31.0.107@o2ib,172.31.0.108@o2ib:/scratch  3.0P  236T  2.8P   8% /scratch
+172.31.0.101@o2ib,172.31.0.102@o2ib:172.31.0.103@o2ib,172.31.0.104@o2ib:172.31.0.105@o2ib,172.31.0.106@o2ib:172.31.0.107@o2ib,172.31.0.108@o2ib:/home     1.1P   60T  974T   6% /home
+probe_complete=true

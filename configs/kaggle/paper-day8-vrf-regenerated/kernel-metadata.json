@@ -1,0 +1,15 @@
+{
+  "id": "anosvol/paper-day8-vrf-regenerated",
+  "title": "Paper Day8 VRF Regenerated",
+  "code_file": "day8_vrf.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": ["research"],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": []
+}

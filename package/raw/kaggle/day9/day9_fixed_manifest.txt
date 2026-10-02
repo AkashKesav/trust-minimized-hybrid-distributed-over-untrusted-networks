@@ -1,0 +1,6 @@
+Split combined re-run artifact manifest
+Part: day9_fixed
+Fixed temperature for downstream runs: 0.1
+
+logs/day9_eviction_log_fixed.csv  (298 bytes)
+logs/day9_smart_contract_fixed.csv  (20881 bytes)

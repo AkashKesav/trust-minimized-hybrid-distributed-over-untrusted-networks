@@ -1,0 +1,35 @@
+{
+  "aggregation": "softmax",
+  "attack": "gaussian",
+  "best_test_acc_reporting_only": 0.572,
+  "checkpoint": "/scratch/mm24r002/paper_rerun_20260815/results/full/checkpoints/day3_gaussian_f4_krum_softmax_seed43_final.pt",
+  "collapse_epoch": null,
+  "completed_epochs": 50,
+  "config_hash": "7e267c0bf303542b",
+  "csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day3_gaussian_f4_krum_softmax_seed43.csv",
+  "detector": "krum",
+  "epochs": 50,
+  "gpu_ids": [
+    0
+  ],
+  "gpu_names": [
+    "NVIDIA A100 80GB PCIe"
+  ],
+  "kind": "day3",
+  "malicious_indices": [
+    1,
+    2,
+    3,
+    7
+  ],
+  "mean_fpr_last_10": 0.0,
+  "mean_tpr_last_10": 1.0,
+  "n_malicious": 4,
+  "n_workers": 8,
+  "run_name": "day3_gaussian_f4_krum_softmax_seed43",
+  "seed": 43,
+  "started_utc": "2026-08-15T16:40:38Z",
+  "status": "complete",
+  "wall_time_sec": 977.3326706849039,
+  "worker_csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day3_gaussian_f4_krum_softmax_seed43_workers.csv"
+}

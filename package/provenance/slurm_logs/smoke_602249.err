@@ -1,0 +1,31 @@
+/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at /opt/conda/conda-bld/pytorch_1708025831440/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/autograd/__init__.py:266: UserWarning: Deterministic behavior was enabled with either `torch.use_deterministic_algorithms(True)` or `at::Context::setDeterministicAlgorithms(true)`, but this operation is not deterministic because it uses CuBLAS and you have CUDA >= 10.2. To enable deterministic behavior in this case, you must set an environment variable before running your PyTorch application: CUBLAS_WORKSPACE_CONFIG=:4096:8 or CUBLAS_WORKSPACE_CONFIG=:16:8. For more information, go to https://docs.nvidia.com/cuda/cublas/index.html#cublasApi_reproducibility (Triggered internally at /opt/conda/conda-bld/pytorch_1708025831440/work/aten/src/ATen/Context.cpp:164.)
+  Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py:787: UserWarning: Deterministic behavior was enabled with either `torch.use_deterministic_algorithms(True)` or `at::Context::setDeterministicAlgorithms(true)`, but this operation is not deterministic because it uses CuBLAS and you have CUDA >= 10.2. To enable deterministic behavior in this case, you must set an environment variable before running your PyTorch application: CUBLAS_WORKSPACE_CONFIG=:4096:8 or CUBLAS_WORKSPACE_CONFIG=:16:8. For more information, go to https://docs.nvidia.com/cuda/cublas/index.html#cublasApi_reproducibility (Triggered internally at /opt/conda/conda-bld/pytorch_1708025831440/work/aten/src/ATen/Context.cpp:164.)
+  gram = centered @ centered.T
+Traceback (most recent call last):
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/statistics.py", line 344, in fmean
+    n = len(data)
+TypeError: object of type 'generator' has no len()
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 3007, in <module>
+    main()
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 2992, in main
+    run_specification_list(smoke_specifications(), "single_gpu_smoke")
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 2940, in run_specification_list
+    result = run_specification(specification, gpu_id=0)
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 2863, in run_specification
+    return run_day4(seed=int(specification["seed"]), gpu_id=gpu_id)
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 1255, in run_day4
+    "mean_worker_train_loss": statistics.fmean(
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/statistics.py", line 352, in fmean
+    total = fsum(count(data))
+  File "/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/statistics.py", line 350, in count
+    for n, x in enumerate(iterable, start=1):
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 1256, in <genexpr>
+    metric["loss"] for metric in worker_training
+TypeError: tuple indices must be integers or slices, not str

@@ -1,0 +1,300 @@
+{
+  "results": [
+    {
+      "result": {
+        "csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day2_n4_softmax_seed42.csv",
+        "run": "day2_n4_softmax_seed42",
+        "status": "complete"
+      },
+      "sequence": 1,
+      "specification": {
+        "aggregation": "softmax",
+        "attack": "clean",
+        "cost": 4.0,
+        "day": 2,
+        "detector": "none",
+        "epochs": 200,
+        "kind": "federated",
+        "label": "n4_softmax",
+        "n_malicious": 0,
+        "n_workers": 4,
+        "seed": 42
+      },
+      "status": "complete"
+    },
+    {
+      "result": {
+        "csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day2_n2_topk_seed44.csv",
+        "run": "day2_n2_topk_seed44",
+        "status": "complete"
+      },
+      "sequence": 2,
+      "specification": {
+        "aggregation": "topk",
+        "attack": "clean",
+        "cost": 4.0,
+        "day": 2,
+        "detector": "none",
+        "epochs": 200,
+        "kind": "federated",
+        "label": "n2_topk",
+        "n_malicious": 0,
+        "n_workers": 2,
+        "seed": 44
+      },
+      "status": "complete"
+    },
+    {
+      "result": {
+        "csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day1_seed43.csv",
+        "run": "day1_seed43",
+        "status": "complete"
+      },
+      "sequence": 3,
+      "specification": {
+        "cost": 4.0,
+        "day": 1,
+        "kind": "day1",
+        "seed": 43
+      },
+      "status": "complete"
+    },
+    {
+      "result": {
+        "csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day3_byzantine_majority_f2_krum_softmax_seed42.csv",
+        "run": "day3_byzantine_majority_f2_krum_softmax_seed42",
+        "status": "complete"
+      },
+      "sequence": 4,
+      "specification": {
+        "aggregation": "softmax",
+        "attack": "byzantine_majority",
+        "cost": 1.0,
+        "day": 3,
+        "detector": "krum",
+        "epochs": 50,
+        "kind": "federated",
+        "n_malicious": 2,
+        "seed": 42
+      },
+      "status": "complete"
+    },
+    {
+      "result": {
+        "csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day3_byzantine_majority_f5_krum_softmax_seed44.csv",
+        "run": "day3_byzantine_majority_f5_krum_softmax_seed44",
+        "status": "numerical_collapse"
+      },
+      "sequence": 5,
+      "specification": {
+        "aggregation": "softmax",
+        "attack": "byzantine_majority",
+        "cost": 1.0,
+        "day": 3,
+        "detector": "krum",
+        "epochs": 50,
+        "kind": "federated",
+        "n_malicious": 5,
+        "seed": 44
+      },
+      "status": "complete"
+    },
+    {
+      "result": {
+        "csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day3_gaussian_f4_kmeans_softmax_seed43.csv",
+        "run": "day3_gaussian_f4_kmeans_softmax_seed43",
+        "status": "numerical_collapse"
+      },
+      "sequence": 6,
+      "specification": {
+        "aggregation": "softmax",
+        "attack": "gaussian",
+        "cost": 1.0,
+        "day": 3,
+        "detector": "kmeans",
+        "epochs": 50,
+        "kind": "federated",
+        "n_malicious": 4,
+        "seed": 43
+      },
+      "status": "complete"
+    },
+    {
+      "result": {
+        "csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day3_gaussian_f4_krum_softmax_seed42.csv",
+        "run": "day3_gaussian_f4_krum_softmax_seed42",
+        "status": "complete"
+      },
+      "sequence": 7,
+      "specification": {
+        "aggregation": "softmax",
+        "attack": "gaussian",
+        "cost": 1.0,
+        "day": 3,
+        "detector": "krum",
+        "epochs": 50,
+        "kind": "federated",
+        "n_malicious": 4,
+        "seed": 42
+      },
+      "status": "complete"
+    },
+    {
+      "result": {
+        "csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day3_mean_shift_f2_kmeans_softmax_seed44.csv",
+        "run": "day3_mean_shift_f2_kmeans_softmax_seed44",
+        "status": "complete"
+      },
+      "sequence": 8,
+      "specification": {
+        "aggregation": "softmax",
+        "attack": "mean_shift",
+        "cost": 1.0,
+        "day": 3,
+        "detector": "kmeans",
+        "epochs": 50,
+        "kind": "federated",
+        "n_malicious": 2,
+        "seed": 44
+      },
+      "status": "complete"
+    },
+    {
+      "result": {
+        "csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day3_mean_shift_f2_krum_softmax_seed43.csv",
+        "run": "day3_mean_shift_f2_krum_softmax_seed43",
+        "status": "complete"
+      },
+      "sequence": 9,
+      "specification": {
+        "aggregation": "softmax",
+        "attack": "mean_shift",
+        "cost": 1.0,
+        "day": 3,
+        "detector": "krum",
+        "epochs": 50,
+        "kind": "federated",
+        "n_malicious": 2,
+        "seed": 43
+      },
+      "status": "complete"
+    },
+    {
+      "result": {
+        "csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day3_zero_update_f2_kmeans_softmax_seed42.csv",
+        "run": "day3_zero_update_f2_kmeans_softmax_seed42",
+        "status": "complete"
+      },
+      "sequence": 10,
+      "specification": {
+        "aggregation": "softmax",
+        "attack": "zero_update",
+        "cost": 1.0,
+        "day": 3,
+        "detector": "kmeans",
+        "epochs": 50,
+        "kind": "federated",
+        "n_malicious": 2,
+        "seed": 42
+      },
+      "status": "complete"
+    },
+    {
+      "result": {
+        "csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day3_zero_update_f5_kmeans_softmax_seed44.csv",
+        "run": "day3_zero_update_f5_kmeans_softmax_seed44",
+        "status": "complete"
+      },
+      "sequence": 11,
+      "specification": {
+        "aggregation": "softmax",
+        "attack": "zero_update",
+        "cost": 1.0,
+        "day": 3,
+        "detector": "kmeans",
+        "epochs": 50,
+        "kind": "federated",
+        "n_malicious": 5,
+        "seed": 44
+      },
+      "status": "complete"
+    },
+    {
+      "result": {
+        "csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day3_zero_update_f5_krum_softmax_seed43.csv",
+        "run": "day3_zero_update_f5_krum_softmax_seed43",
+        "status": "complete"
+      },
+      "sequence": 12,
+      "specification": {
+        "aggregation": "softmax",
+        "attack": "zero_update",
+        "cost": 1.0,
+        "day": 3,
+        "detector": "krum",
+        "epochs": 50,
+        "kind": "federated",
+        "n_malicious": 5,
+        "seed": 43
+      },
+      "status": "complete"
+    },
+    {
+      "result": {
+        "csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day10_plus_krum_topk_seed42.csv",
+        "run": "day10_plus_krum_topk_seed42",
+        "status": "complete"
+      },
+      "sequence": 13,
+      "specification": {
+        "aggregation": "topk",
+        "attack": "mean_shift",
+        "cost": 0.6,
+        "day": 10,
+        "detector": "krum",
+        "epochs": 30,
+        "kind": "federated",
+        "label": "plus_krum_topk",
+        "n_malicious": 2,
+        "seed": 42
+      },
+      "status": "complete"
+    },
+    {
+      "result": {
+        "csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day6_gaussian_activation_none_seed43.csv",
+        "run": "day6_gaussian_activation_none_seed43",
+        "status": "complete"
+      },
+      "sequence": 14,
+      "specification": {
+        "attack": "gaussian_activation",
+        "cost": 0.5,
+        "day": 6,
+        "detector_name": "none",
+        "kind": "day6",
+        "seed": 43
+      },
+      "status": "complete"
+    },
+    {
+      "result": {
+        "csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day6_zero_activation_activation_norm_seed42.csv",
+        "run": "day6_zero_activation_activation_norm_seed42",
+        "status": "complete"
+      },
+      "sequence": 15,
+      "specification": {
+        "attack": "zero_activation",
+        "cost": 0.5,
+        "day": 6,
+        "detector_name": "activation_norm",
+        "kind": "day6",
+        "seed": 42
+      },
+      "status": "complete"
+    }
+  ],
+  "run_label": "bundle_03_of_08",
+  "status": "complete"
+}

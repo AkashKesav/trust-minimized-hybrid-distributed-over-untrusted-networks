@@ -1,0 +1,116 @@
+timestamp=2026-08-15T15:30:44+05:30
+hostname=rsgpu019
+job_id=602538
+0, NVIDIA A100 80GB PCIe, 81920 MiB, 550.54.14
+output:      /scratch/mm24r002/paper_rerun_20260815/results/smoke
+config hash: bd2f170afc1cc454
+run days:    [1, 2, 3, 4, 5, 6, 7, 10]
+seeds:       (42,)
+{
+  "created_utc": "2026-08-15T10:00:46Z",
+  "config": {
+    "output_root": "/scratch/mm24r002/paper_rerun_20260815/results/smoke",
+    "data_root": "/scratch/mm24r002/paper_rerun_20260815/data",
+    "model_architecture": "torchvision_resnet50_standard_stem_cifar10_head",
+    "model_num_classes": 10,
+    "model_parameter_count": 23528522,
+    "seeds": [
+      42
+    ],
+    "split_seed": 20260815,
+    "train_size": 45000,
+    "validation_size": 5000,
+    "test_size": 10000,
+    "batch_size": 128,
+    "loader_workers": 0,
+    "learning_rate": 0.1,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "nesterov": true,
+    "lr_milestones": [
+      100,
+      150
+    ],
+    "lr_gamma": 0.1,
+    "temperature": 0.1,
+    "use_bfloat16_amp": true,
+    "deterministic": true,
+    "n_workers": 8,
+    "day1_epochs": 2,
+    "day3_epochs": 2,
+    "day4_epochs": 1,
+    "day4_benchmark_warmup": 0,
+    "day4_benchmark_runs": 1,
+    "day5_epochs": 2,
+    "day6_epochs": 2,
+    "day7_epochs": 2,
+    "day10_epochs": 2,
+    "gaussian_covariance": 30.0,
+    "mean_shift_scale": 1.0,
+    "majority_scale": 5.0,
+    "save_checkpoints": false,
+    "checkpoint_interval": 1
+  },
+  "config_hash": "bd2f170afc1cc454",
+  "run_days": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    10
+  ],
+  "smoke_test": true,
+  "python": "3.10.13",
+  "platform": "Linux-4.18.0-513.5.1.el8_9.x86_64-x86_64-with-glibc2.28",
+  "torch": "2.2.1",
+  "torchvision": "0.17.1",
+  "cuda_runtime": "11.8",
+  "cudnn": 8700,
+  "numpy": "1.26.4",
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA A100 80GB PCIe",
+      "total_memory_bytes": 84974239744,
+      "compute_capability": "8.0"
+    }
+  ],
+  "scope_note": "Algorithm-level DGX simulation; no real blockchain/network/VRF proof execution."
+}
+Files already downloaded and verified
+Files already downloaded and verified
+[single_gpu_smoke] starting 1/7: {"cost":1.0,"day":1,"kind":"day1","seed":42}
+[single_gpu_smoke] starting 2/7: {"aggregation":"softmax","attack":"clean","cost":1.0,"day":2,"detector":"none","epochs":2,"kind":"federated","label":"n2_softmax","n_malicious":0,"n_workers":2,"seed":42}
+[single_gpu_smoke] starting 3/7: {"cost":1.0,"day":4,"kind":"day4","seed":42}
+[single_gpu_smoke] starting 4/7: {"aggregation":"softmax","attack":"mean_shift","cost":1.0,"day":3,"detector":"kmeans","epochs":2,"kind":"federated","n_malicious":2,"seed":42}
+[day3_mean_shift_f2_kmeans_softmax_seed42] 001/2 test=0.1000 TPR=0.000 FPR=0.167 accepted=[0, 1, 2, 3, 4, 5, 6]
+[day3_mean_shift_f2_kmeans_softmax_seed42] 002/2 test=0.1000 TPR=0.000 FPR=0.333 accepted=[0, 1, 4, 5, 6, 7]
+[single_gpu_smoke] starting 5/7: {"aggregation":"topk","attack":"mean_shift","cost":1.0,"day":10,"detector":"krum","epochs":2,"kind":"federated","label":"plus_krum_topk","n_malicious":2,"seed":42}
+[day10_plus_krum_topk_seed42] 001/2 test=0.1000 TPR=0.000 FPR=0.333 accepted=[0, 1, 2, 3, 4, 5]
+[day10_plus_krum_topk_seed42] 002/2 test=0.1000 TPR=0.000 FPR=0.333 accepted=[0, 1, 2, 3, 4, 6]
+[single_gpu_smoke] starting 6/7: {"attack":"zero_activation","cost":1.0,"day":6,"detector_name":"activation_norm","kind":"day6","seed":42}
+[day6_zero_activation_activation_norm_seed42] 01/2 val=0.1100 test(report)=0.1000 TPR=1.000 FPR=1.000
+[day6_zero_activation_activation_norm_seed42] 02/2 val=0.1076 test(report)=0.1000 TPR=1.000 FPR=1.000
+[single_gpu_smoke] starting 7/7: {"cost":1.0,"day":7,"kind":"day7","seed":42}
+[day7_seed42/baseline] 1/2 val=0.0962 test(report)=0.1035
+[day7_seed42/baseline] 2/2 val=0.1968 test(report)=0.1962
+[day7_seed42/activation_detector] 1/2 val=0.0962 test(report)=0.1035
+[day7_seed42/activation_detector] 2/2 val=0.1968 test(report)=0.1962
+[day7_seed42/detector_plus_commit_reveal] 1/2 val=0.0962 test(report)=0.1035
+[day7_seed42/detector_plus_commit_reveal] 2/2 val=0.1968 test(report)=0.1962
+{
+  "checked_primary_csvs": 7,
+  "checked_rank_manifests": 0,
+  "checked_summaries": 7,
+  "checked_worker_csvs": 3,
+  "errors": [],
+  "hashed_files": 29,
+  "mode": "smoke",
+  "passed": true,
+  "root": "/scratch/mm24r002/paper_rerun_20260815/results/smoke",
+  "warnings": []
+}
+smoke_complete=true

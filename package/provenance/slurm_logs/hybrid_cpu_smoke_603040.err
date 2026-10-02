@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/scratch/mm24r002/paper_rerun_20260815/env/hybrid_cpu_smoke.py", line 33, in <module>
+    import dgx_a100_rerun as R
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 244, in <module>
+    raise RuntimeError("CUDA is required for the DGX rerun.")
+RuntimeError: CUDA is required for the DGX rerun.

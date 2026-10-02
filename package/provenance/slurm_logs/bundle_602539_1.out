@@ -1,0 +1,212 @@
+timestamp=2026-08-15T16:09:02+05:30
+hostname=rsgpu004
+job_id=602569 array_task=1
+0, NVIDIA A100 80GB PCIe, 81920 MiB, 550.54.14
+output:      /scratch/mm24r002/paper_rerun_20260815/results/full
+config hash: 7e267c0bf303542b
+run days:    [1, 2, 3, 4, 6, 7, 10]
+seeds:       (42, 43, 44)
+{
+  "created_utc": "2026-08-15T10:40:32Z",
+  "config": {
+    "output_root": "/scratch/mm24r002/paper_rerun_20260815/results/full",
+    "data_root": "/scratch/mm24r002/paper_rerun_20260815/data",
+    "model_architecture": "torchvision_resnet50_standard_stem_cifar10_head",
+    "model_num_classes": 10,
+    "model_parameter_count": 23528522,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "split_seed": 20260815,
+    "train_size": 45000,
+    "validation_size": 5000,
+    "test_size": 10000,
+    "batch_size": 128,
+    "loader_workers": 2,
+    "learning_rate": 0.1,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "nesterov": true,
+    "lr_milestones": [
+      100,
+      150
+    ],
+    "lr_gamma": 0.1,
+    "temperature": 0.1,
+    "use_bfloat16_amp": true,
+    "deterministic": true,
+    "n_workers": 8,
+    "day1_epochs": 200,
+    "day3_epochs": 50,
+    "day4_epochs": 5,
+    "day4_benchmark_warmup": 2,
+    "day4_benchmark_runs": 5,
+    "day5_epochs": 200,
+    "day6_epochs": 20,
+    "day7_epochs": 5,
+    "day10_epochs": 30,
+    "gaussian_covariance": 30.0,
+    "mean_shift_scale": 1.0,
+    "majority_scale": 5.0,
+    "save_checkpoints": true,
+    "checkpoint_interval": 5
+  },
+  "config_hash": "7e267c0bf303542b",
+  "run_days": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    10
+  ],
+  "smoke_test": false,
+  "python": "3.10.13",
+  "platform": "Linux-4.18.0-513.5.1.el8_9.x86_64-x86_64-with-glibc2.28",
+  "torch": "2.2.1",
+  "torchvision": "0.17.1",
+  "cuda_runtime": "11.8",
+  "cudnn": 8700,
+  "numpy": "1.26.4",
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA A100 80GB PCIe",
+      "total_memory_bytes": 84974239744,
+      "compute_capability": "8.0"
+    }
+  ],
+  "scope_note": "Algorithm-level DGX simulation; no real blockchain/network/VRF proof execution."
+}
+Files already downloaded and verified
+Files already downloaded and verified
+[bundle_01_of_08] starting 1/15: {"aggregation":"softmax","attack":"clean","cost":4.0,"day":2,"detector":"none","epochs":200,"kind":"federated","label":"n2_softmax","n_malicious":0,"n_workers":2,"seed":43}
+[day2_n2_softmax_seed43] 001/200 test=0.1000 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 005/200 test=0.3479 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 010/200 test=0.4786 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 015/200 test=0.5510 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 020/200 test=0.6285 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 025/200 test=0.6822 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 030/200 test=0.7385 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 035/200 test=0.7504 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 040/200 test=0.7713 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 045/200 test=0.7664 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 050/200 test=0.7802 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 055/200 test=0.7711 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 060/200 test=0.7946 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 065/200 test=0.7957 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 070/200 test=0.8016 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 075/200 test=0.7996 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 080/200 test=0.7986 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 085/200 test=0.8210 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 090/200 test=0.8160 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 095/200 test=0.8003 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 100/200 test=0.8097 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 105/200 test=0.8610 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 110/200 test=0.8677 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 115/200 test=0.8716 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 120/200 test=0.8743 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 125/200 test=0.8700 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 130/200 test=0.8722 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 135/200 test=0.8656 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 140/200 test=0.8705 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 145/200 test=0.8672 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 150/200 test=0.8700 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 155/200 test=0.8805 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 160/200 test=0.8771 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 165/200 test=0.8775 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 170/200 test=0.8788 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 175/200 test=0.8788 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 180/200 test=0.8797 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 185/200 test=0.8789 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 190/200 test=0.8784 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 195/200 test=0.8795 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_softmax_seed43] 200/200 test=0.8769 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[bundle_01_of_08] starting 2/15: {"aggregation":"topk","attack":"clean","cost":4.0,"day":2,"detector":"none","epochs":200,"kind":"federated","label":"n2_topk","n_malicious":0,"n_workers":2,"seed":42}
+[day2_n2_topk_seed42] 001/200 test=0.1629 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 005/200 test=0.3412 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 010/200 test=0.4636 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 015/200 test=0.5523 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 020/200 test=0.5911 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 025/200 test=0.6350 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 030/200 test=0.6699 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 035/200 test=0.6798 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 040/200 test=0.7152 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 045/200 test=0.7099 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 050/200 test=0.7032 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 055/200 test=0.7265 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 060/200 test=0.7382 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 065/200 test=0.7439 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 070/200 test=0.7271 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 075/200 test=0.7459 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 080/200 test=0.7467 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 085/200 test=0.7378 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 090/200 test=0.7558 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 095/200 test=0.7365 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 100/200 test=0.7508 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 105/200 test=0.8426 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 110/200 test=0.8480 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 115/200 test=0.8546 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 120/200 test=0.8543 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 125/200 test=0.8534 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 130/200 test=0.8566 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 135/200 test=0.8562 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 140/200 test=0.8468 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 145/200 test=0.8495 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 150/200 test=0.8601 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 155/200 test=0.8757 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 160/200 test=0.8751 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 165/200 test=0.8767 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 170/200 test=0.8774 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 175/200 test=0.8779 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 180/200 test=0.8764 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 185/200 test=0.8761 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 190/200 test=0.8755 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 195/200 test=0.8752 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[day2_n2_topk_seed42] 200/200 test=0.8751 TPR=0.000 FPR=0.000 accepted=[0, 1]
+[bundle_01_of_08] starting 3/15: {"aggregation":"topk","attack":"clean","cost":4.0,"day":2,"detector":"none","epochs":200,"kind":"federated","label":"n8_topk","n_malicious":0,"n_workers":8,"seed":44}
+[day2_n8_topk_seed44] 001/200 test=0.1000 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 005/200 test=0.1722 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 010/200 test=0.2731 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 015/200 test=0.3698 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 020/200 test=0.4140 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 025/200 test=0.4565 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 030/200 test=0.4859 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 035/200 test=0.5209 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 040/200 test=0.5372 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 045/200 test=0.5714 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 050/200 test=0.6005 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 055/200 test=0.6259 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 060/200 test=0.6489 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 065/200 test=0.6643 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 070/200 test=0.6897 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 075/200 test=0.7036 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 080/200 test=0.7102 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 085/200 test=0.7277 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 090/200 test=0.7366 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 095/200 test=0.7518 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 100/200 test=0.7564 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 105/200 test=0.7876 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 110/200 test=0.7918 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 115/200 test=0.7977 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 120/200 test=0.7972 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 125/200 test=0.8039 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 130/200 test=0.8049 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 135/200 test=0.8089 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 140/200 test=0.8080 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 145/200 test=0.8096 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 150/200 test=0.8110 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 155/200 test=0.8137 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 160/200 test=0.8147 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 165/200 test=0.8154 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 170/200 test=0.8152 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 175/200 test=0.8156 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 180/200 test=0.8161 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 185/200 test=0.8168 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 190/200 test=0.8154 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 195/200 test=0.8149 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[day2_n8_topk_seed44] 200/200 test=0.8157 TPR=0.000 FPR=0.000 accepted=[0, 1, 2, 3, 4, 5, 6, 7]
+[bundle_01_of_08] starting 4/15: {"aggregation":"softmax","attack":"byzantine_majority","cost":1.0,"day":3,"detector":"kmeans","epochs":50,"kind":"federated","n_malicious":5,"seed":43}

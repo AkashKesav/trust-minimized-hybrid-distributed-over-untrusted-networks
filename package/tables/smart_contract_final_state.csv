@@ -1,0 +1,9 @@
+node,final_reputation,final_violations,final_status,active
+0,0.6000000000000001,2,penalized,True
+1,1.0,0,active,True
+2,0.0,4,evicted,False
+3,1.0,0,active,True
+4,1.0,0,active,True
+5,0.0,4,evicted,False
+6,1.0,0,active,True
+7,1.0,0,active,True

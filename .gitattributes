@@ -1,0 +1,2 @@
+# Preserve file bytes exactly as produced by the experiments (no EOL conversion).
+* -text

@@ -1,0 +1,22 @@
+/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at /opt/conda/conda-bld/pytorch_1708025831440/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/home/apps/MLDL/DL-CondaPy3/envs/Pytorch-gpu/lib/python3.10/site-packages/torch/autograd/__init__.py:266: UserWarning: Deterministic behavior was enabled with either `torch.use_deterministic_algorithms(True)` or `at::Context::setDeterministicAlgorithms(true)`, but this operation is not deterministic because it uses CuBLAS and you have CUDA >= 10.2. To enable deterministic behavior in this case, you must set an environment variable before running your PyTorch application: CUBLAS_WORKSPACE_CONFIG=:4096:8 or CUBLAS_WORKSPACE_CONFIG=:16:8. For more information, go to https://docs.nvidia.com/cuda/cublas/index.html#cublasApi_reproducibility (Triggered internally at /opt/conda/conda-bld/pytorch_1708025831440/work/aten/src/ATen/Context.cpp:164.)
+  Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py:787: UserWarning: Deterministic behavior was enabled with either `torch.use_deterministic_algorithms(True)` or `at::Context::setDeterministicAlgorithms(true)`, but this operation is not deterministic because it uses CuBLAS and you have CUDA >= 10.2. To enable deterministic behavior in this case, you must set an environment variable before running your PyTorch application: CUBLAS_WORKSPACE_CONFIG=:4096:8 or CUBLAS_WORKSPACE_CONFIG=:16:8. For more information, go to https://docs.nvidia.com/cuda/cublas/index.html#cublasApi_reproducibility (Triggered internally at /opt/conda/conda-bld/pytorch_1708025831440/work/aten/src/ATen/Context.cpp:164.)
+  gram = centered @ centered.T
+/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py:852: UserWarning: Deterministic behavior was enabled with either `torch.use_deterministic_algorithms(True)` or `at::Context::setDeterministicAlgorithms(true)`, but this operation is not deterministic because it uses CuBLAS and you have CUDA >= 10.2. To enable deterministic behavior in this case, you must set an environment variable before running your PyTorch application: CUBLAS_WORKSPACE_CONFIG=:4096:8 or CUBLAS_WORKSPACE_CONFIG=:16:8. For more information, go to https://docs.nvidia.com/cuda/cublas/index.html#cublasApi_reproducibility (Triggered internally at /opt/conda/conda-bld/pytorch_1708025831440/work/aten/src/ATen/Context.cpp:164.)
+  distances = torch.clamp(norms + norms.T - 2 * (vectors @ vectors.T), min=0)
+Traceback (most recent call last):
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 3044, in <module>
+    main()
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 3029, in main
+    run_specification_list(smoke_specifications(), "single_gpu_smoke")
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 2977, in run_specification_list
+    result = run_specification(specification, gpu_id=0)
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 2898, in run_specification
+    return run_federated_experiment(gpu_id=gpu_id, **payload)
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 1422, in run_federated_experiment
+    submitted_vectors = apply_update_attack(
+  File "/scratch/mm24r002/paper_rerun_20260815/env/dgx_a100_rerun.py", line 916, in apply_update_attack
+    attacked[malicious] = malicious_delta
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2062288.48 GiB. GPU 0 has a total capacity of 79.14 GiB of which 4.61 GiB is free. Process 81177 has 69.09 GiB memory in use. Including non-PyTorch memory, this process has 5.39 GiB memory in use. Of the allocated memory 4.61 GiB is allocated by PyTorch, and 230.39 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

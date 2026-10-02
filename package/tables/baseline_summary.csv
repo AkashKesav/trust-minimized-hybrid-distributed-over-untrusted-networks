@@ -1,0 +1,4 @@
+seed,best_validation_epoch,best_validation_accuracy,test_accuracy_at_validation_best,final_test_accuracy,final3_epoch_time_sec,final3_samples_per_second
+42,176,0.895,0.8854,0.8836,7.661325119435787,5873.65753293002
+43,186,0.9008,0.8861,0.8893,8.036210941771666,5599.653907302648
+44,179,0.8956,0.8828,0.8797,11.423893991857767,3939.112182945077

@@ -1,0 +1,33 @@
+{
+  "aggregation": "softmax",
+  "attack": "zero_update",
+  "best_test_acc_reporting_only": 0.6335,
+  "checkpoint": "/scratch/mm24r002/paper_rerun_20260815/results/full/checkpoints/day3_zero_update_f2_kmeans_softmax_seed43_final.pt",
+  "collapse_epoch": null,
+  "completed_epochs": 50,
+  "config_hash": "7e267c0bf303542b",
+  "csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day3_zero_update_f2_kmeans_softmax_seed43.csv",
+  "detector": "kmeans",
+  "epochs": 50,
+  "gpu_ids": [
+    0
+  ],
+  "gpu_names": [
+    "NVIDIA A100 80GB PCIe"
+  ],
+  "kind": "day3",
+  "malicious_indices": [
+    0,
+    2
+  ],
+  "mean_fpr_last_10": 0.16666666666666666,
+  "mean_tpr_last_10": 0.0,
+  "n_malicious": 2,
+  "n_workers": 8,
+  "run_name": "day3_zero_update_f2_kmeans_softmax_seed43",
+  "seed": 43,
+  "started_utc": "2026-08-15T17:34:30Z",
+  "status": "complete",
+  "wall_time_sec": 1137.1436463594437,
+  "worker_csv": "/scratch/mm24r002/paper_rerun_20260815/results/full/logs/day3_zero_update_f2_kmeans_softmax_seed43_workers.csv"
+}

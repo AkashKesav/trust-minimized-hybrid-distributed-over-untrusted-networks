@@ -1,0 +1,11 @@
+epoch,node,reason,violations
+10,2,byzantine_gradient,1
+10,5,byzantine_gradient,1
+20,2,byzantine_gradient,2
+20,5,byzantine_gradient,2
+24,0,validator_timeout,1
+30,2,byzantine_gradient,3
+30,5,byzantine_gradient,3
+40,2,byzantine_gradient,4
+40,5,byzantine_gradient,4
+45,0,validator_timeout,2

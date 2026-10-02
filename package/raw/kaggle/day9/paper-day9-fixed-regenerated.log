@@ -1,0 +1,56 @@
+[{"stream_name":"stderr","time":6.6871220220000005,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.687188551,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":7.612262036,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.612297347,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.612303742,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.612308634,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.364697737,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.364740233,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.36474554,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.364749951,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":19.123768546,"data":"torch 2.10.0+cpu available\n"}
+,{"stream_name":"stdout","time":23.717590358,"data":"deps OK\n"}
+,{"stream_name":"stdout","time":23.743267095,"data":"DATA_DIR = ./data\n"}
+,{"stream_name":"stdout","time":23.743302421,"data":"Temperature sweep: [0.1, 0.3, 0.5, 0.7, 1.0]\n"}
+,{"stream_name":"stdout","time":23.74331014,"data":"Day 3: 25 scenarios × 50 epochs\n"}
+,{"stream_name":"stdout","time":23.743317183,"data":"Day 9: timeout probability = 0.02 (was 0.10)\n"}
+,{"stream_name":"stdout","time":23.743323588,"data":"Day 10: replacement nodes enabled\n"}
+,{"stream_name":"stdout","time":26.87627148,"data":"Running Day 9 with timeout_prob=0.02 (was 0.10)...\n"}
+,{"stream_name":"stdout","time":26.876312547,"data":"  ep 0: active=8, evicted=[]\n"}
+,{"stream_name":"stdout","time":26.877893781,"data":"  ep 20: active=8, evicted=[]\n"}
+,{"stream_name":"stdout","time":26.879467763,"data":"  ep 40: active=8, evicted=[2, 5]\n"}
+,{"stream_name":"stdout","time":26.880920238,"data":"  ep 60: active=6, evicted=[2, 5]\n"}
+,{"stream_name":"stdout","time":26.883333656,"data":"  ep 80: active=6, evicted=[2, 5]\n"}
+,{"stream_name":"stdout","time":26.884220501,"data":"  ep 99: active=6, evicted=[2, 5]\n"}
+,{"stream_name":"stdout","time":26.888813219,"data":"\n"}
+,{"stream_name":"stdout","time":26.888856836,"data":"======================================================================\n"}
+,{"stream_name":"stdout","time":26.888863521,"data":"DAY 9 FIXED SUMMARY (timeout_prob=0.02)\n"}
+,{"stream_name":"stdout","time":26.888869254,"data":"======================================================================\n"}
+,{"stream_name":"stdout","time":26.888874824,"data":"Node        Rep   Viol Status         Malicious?\n"}
+,{"stream_name":"stdout","time":26.888880141,"data":"--------------------------------------------------\n"}
+,{"stream_name":"stdout","time":26.888885767,"data":"0        0.6000      2 penalized              no\n"}
+,{"stream_name":"stdout","time":26.888891289,"data":"1        1.0000      0 active                 no\n"}
+,{"stream_name":"stdout","time":26.888896906,"data":"2        0.0000      4 evicted               YES\n"}
+,{"stream_name":"stdout","time":26.888917285,"data":"3        1.0000      0 active                 no\n"}
+,{"stream_name":"stdout","time":26.888922311,"data":"4        1.0000      0 active                 no\n"}
+,{"stream_name":"stdout","time":26.888926827,"data":"5        0.0000      4 evicted               YES\n"}
+,{"stream_name":"stdout","time":26.888931044,"data":"6        1.0000      0 active                 no\n"}
+,{"stream_name":"stdout","time":26.888935112,"data":"7        1.0000      0 active                 no\n"}
+,{"stream_name":"stdout","time":26.888939717,"data":"\n"}
+,{"stream_name":"stdout","time":26.888943678,"data":"Malicious evicted: True\n"}
+,{"stream_name":"stdout","time":26.888947978,"data":"Honest false positives: []\n"}
+,{"stream_name":"stdout","time":26.888952601,"data":"✅ NO FALSE POSITIVES — fix worked!\n"}
+,{"stream_name":"stdout","time":26.888969887000002,"data":"Total violations: 10\n"}
+,{"stream_name":"stdout","time":26.888974972,"data":"CSV: logs/day9_smart_contract_fixed.csv\n"}
+,{"stream_name":"stdout","time":26.908098265,"data":"\n"}
+,{"stream_name":"stdout","time":26.908129001,"data":"Artifacts: /kaggle/working/day9_fixed_artifacts.zip (2.7 KB)\n"}
+,{"stream_name":"stdout","time":26.908134778,"data":"Files archived: 2\n"}
+,{"stream_name":"stderr","time":30.864442235,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":30.864476876,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":31.065666485,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":31.065696518,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":31.879805533,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":32.285954722,"data":"[NbConvertApp] Writing 33177 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":35.3366738,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":36.506751693,"data":"[NbConvertApp] Writing 401990 bytes to __results__.html\n"}
+]

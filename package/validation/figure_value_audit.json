@@ -1,0 +1,1043 @@
+{
+  "all_passed": true,
+  "check_count": 109,
+  "checks": [
+    {
+      "absolute_difference": null,
+      "check": "complete eleven-figure set",
+      "expected": [
+        "fig01_baseline.png",
+        "fig02_data_parallelism.png",
+        "fig03_softmax_vs_topk.png",
+        "fig04_detection_scatter.png",
+        "fig05_survival_accuracy.png",
+        "fig06_overhead.png",
+        "fig07_pipeline_attacks.png",
+        "fig08_vrf_fairness.png",
+        "fig09_smart_contract.png",
+        "fig10_ablation.png",
+        "fig11_pipeline_convergence.png"
+      ],
+      "observed": [
+        "fig01_baseline.png",
+        "fig02_data_parallelism.png",
+        "fig03_softmax_vs_topk.png",
+        "fig04_detection_scatter.png",
+        "fig05_survival_accuracy.png",
+        "fig06_overhead.png",
+        "fig07_pipeline_attacks.png",
+        "fig08_vrf_fairness.png",
+        "fig09_smart_contract.png",
+        "fig10_ablation.png",
+        "fig11_pipeline_convergence.png"
+      ],
+      "passed": true,
+      "source": "figures/*.png",
+      "tolerance": null
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig01_baseline.png is non-empty",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig01_baseline.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig01_baseline.png has drawable dimensions",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig01_baseline.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig02_data_parallelism.png is non-empty",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig02_data_parallelism.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig02_data_parallelism.png has drawable dimensions",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig02_data_parallelism.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig03_softmax_vs_topk.png is non-empty",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig03_softmax_vs_topk.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig03_softmax_vs_topk.png has drawable dimensions",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig03_softmax_vs_topk.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig04_detection_scatter.png is non-empty",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig04_detection_scatter.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig04_detection_scatter.png has drawable dimensions",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig04_detection_scatter.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig05_survival_accuracy.png is non-empty",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig05_survival_accuracy.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig05_survival_accuracy.png has drawable dimensions",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig05_survival_accuracy.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig06_overhead.png is non-empty",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig06_overhead.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig06_overhead.png has drawable dimensions",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig06_overhead.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig07_pipeline_attacks.png is non-empty",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig07_pipeline_attacks.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig07_pipeline_attacks.png has drawable dimensions",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig07_pipeline_attacks.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig08_vrf_fairness.png is non-empty",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig08_vrf_fairness.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig08_vrf_fairness.png has drawable dimensions",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig08_vrf_fairness.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig09_smart_contract.png is non-empty",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig09_smart_contract.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig09_smart_contract.png has drawable dimensions",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig09_smart_contract.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig10_ablation.png is non-empty",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig10_ablation.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig10_ablation.png has drawable dimensions",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig10_ablation.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig11_pipeline_convergence.png is non-empty",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig11_pipeline_convergence.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "fig11_pipeline_convergence.png has drawable dimensions",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "source": "fig11_pipeline_convergence.png",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 1 final test mean",
+      "expected": 0.8842,
+      "observed": 0.8842,
+      "passed": true,
+      "source": "corrected_metrics.json:baseline",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 1.1102230246251565e-16,
+      "check": "Figure 2 N=2 softmax final mean",
+      "expected": 0.8781333333333333,
+      "observed": 0.8781333333333334,
+      "passed": true,
+      "source": "corrected_metrics.json:data_parallel_final",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 3.469446951953614e-17,
+      "check": "Figure 3 N=2 softmax final sample SD",
+      "expected": 0.001497776129244069,
+      "observed": 0.0014977761292440342,
+      "passed": true,
+      "source": "corrected_metrics.json:data_parallel_final",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 2 N=2 topk final mean",
+      "expected": 0.8715666666666667,
+      "observed": 0.8715666666666667,
+      "passed": true,
+      "source": "corrected_metrics.json:data_parallel_final",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 2.168404344971009e-17,
+      "check": "Figure 3 N=2 topk final sample SD",
+      "expected": 0.0038279672586547927,
+      "observed": 0.003827967258654771,
+      "passed": true,
+      "source": "corrected_metrics.json:data_parallel_final",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 1.1102230246251565e-16,
+      "check": "Figure 2 N=4 softmax final mean",
+      "expected": 0.8547,
+      "observed": 0.8546999999999999,
+      "passed": true,
+      "source": "corrected_metrics.json:data_parallel_final",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 2.1033522146218786e-17,
+      "check": "Figure 3 N=4 softmax final sample SD",
+      "expected": 0.0015874507866387682,
+      "observed": 0.0015874507866387893,
+      "passed": true,
+      "source": "corrected_metrics.json:data_parallel_final",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 2 N=4 topk final mean",
+      "expected": 0.8500333333333333,
+      "observed": 0.8500333333333333,
+      "passed": true,
+      "source": "corrected_metrics.json:data_parallel_final",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 1.734723475976807e-18,
+      "check": "Figure 3 N=4 topk final sample SD",
+      "expected": 0.0063846169292553325,
+      "observed": 0.006384616929255334,
+      "passed": true,
+      "source": "corrected_metrics.json:data_parallel_final",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 2 N=8 softmax final mean",
+      "expected": 0.8297333333333333,
+      "observed": 0.8297333333333333,
+      "passed": true,
+      "source": "corrected_metrics.json:data_parallel_final",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 3 N=8 softmax final sample SD",
+      "expected": 0.0002516611478423306,
+      "observed": 0.0002516611478423306,
+      "passed": true,
+      "source": "corrected_metrics.json:data_parallel_final",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 1.1102230246251565e-16,
+      "check": "Figure 2 N=8 topk final mean",
+      "expected": 0.8106333333333333,
+      "observed": 0.8106333333333332,
+      "passed": true,
+      "source": "corrected_metrics.json:data_parallel_final",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 6.938893903907228e-18,
+      "check": "Figure 3 N=8 topk final sample SD",
+      "expected": 0.006073988255943011,
+      "observed": 0.006073988255943018,
+      "passed": true,
+      "source": "corrected_metrics.json:data_parallel_final",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 5 zero_update, f=2, Krum final mean",
+      "expected": 0.6226333333333334,
+      "observed": 0.6226333333333334,
+      "passed": true,
+      "source": "corrected_metrics.json:byzantine.summary",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 1.3877787807814457e-17,
+      "check": "Figure 5 zero_update, f=4, Krum final mean",
+      "expected": 0.1,
+      "observed": 0.10000000000000002,
+      "passed": true,
+      "source": "corrected_metrics.json:byzantine.summary",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 1.3877787807814457e-17,
+      "check": "Figure 5 zero_update, f=5, Krum final mean",
+      "expected": 0.1,
+      "observed": 0.10000000000000002,
+      "passed": true,
+      "source": "corrected_metrics.json:byzantine.summary",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 5 mean_shift, f=2, Krum final mean",
+      "expected": 0.6419333333333334,
+      "observed": 0.6419333333333334,
+      "passed": true,
+      "source": "corrected_metrics.json:byzantine.summary",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 5.551115123125783e-17,
+      "check": "Figure 5 mean_shift, f=4, Krum final mean",
+      "expected": 0.4144,
+      "observed": 0.41440000000000005,
+      "passed": true,
+      "source": "corrected_metrics.json:byzantine.summary",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 1.1102230246251565e-16,
+      "check": "Figure 5 mean_shift, f=5, Krum final mean",
+      "expected": 0.5344,
+      "observed": 0.5343999999999999,
+      "passed": true,
+      "source": "corrected_metrics.json:byzantine.summary",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 1.1102230246251565e-16,
+      "check": "Figure 5 gaussian, f=2, Krum final mean",
+      "expected": 0.6035666666666667,
+      "observed": 0.6035666666666666,
+      "passed": true,
+      "source": "corrected_metrics.json:byzantine.summary",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 1.1102230246251565e-16,
+      "check": "Figure 5 gaussian, f=4, Krum final mean",
+      "expected": 0.5825,
+      "observed": 0.5824999999999999,
+      "passed": true,
+      "source": "corrected_metrics.json:byzantine.summary",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 5 gaussian, f=5, Krum final mean",
+      "expected": 0.5722,
+      "observed": 0.5722,
+      "passed": true,
+      "source": "corrected_metrics.json:byzantine.summary",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 1.1102230246251565e-16,
+      "check": "Figure 5 byzantine_majority, f=2, Krum final mean",
+      "expected": 0.6177333333333334,
+      "observed": 0.6177333333333332,
+      "passed": true,
+      "source": "corrected_metrics.json:byzantine.summary",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": null,
+      "check": "Figure 5 byzantine_majority, f=4, Krum final mean",
+      "expected": null,
+      "observed": null,
+      "passed": true,
+      "source": "corrected_metrics.json:byzantine.summary",
+      "tolerance": null
+    },
+    {
+      "absolute_difference": null,
+      "check": "Figure 5 byzantine_majority, f=5, Krum final mean",
+      "expected": null,
+      "observed": null,
+      "passed": true,
+      "source": "corrected_metrics.json:byzantine.summary",
+      "tolerance": null
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 6 tdml_reconstruction total time mean",
+      "expected": 12.90512478351593,
+      "observed": 12.90512478351593,
+      "passed": true,
+      "source": "corrected_metrics.json:overhead.per_configuration",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 2.7755575615628914e-17,
+      "check": "Figure 6 tdml_reconstruction total time sample SD",
+      "expected": 0.24275919900653103,
+      "observed": 0.242759199006531,
+      "passed": true,
+      "source": "corrected_metrics.json:overhead.per_configuration",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 6 ours_without_commit_reveal total time mean",
+      "expected": 13.102696554114422,
+      "observed": 13.102696554114422,
+      "passed": true,
+      "source": "corrected_metrics.json:overhead.per_configuration",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 1.887379141862766e-15,
+      "check": "Figure 6 ours_without_commit_reveal total time sample SD",
+      "expected": 0.28059269412203575,
+      "observed": 0.28059269412203763,
+      "passed": true,
+      "source": "corrected_metrics.json:overhead.per_configuration",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 6 ours_with_commit_reveal total time mean",
+      "expected": 17.149302802152103,
+      "observed": 17.149302802152103,
+      "passed": true,
+      "source": "corrected_metrics.json:overhead.per_configuration",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 1.1102230246251565e-16,
+      "check": "Figure 6 ours_with_commit_reveal total time sample SD",
+      "expected": 0.5089592670877064,
+      "observed": 0.5089592670877066,
+      "passed": true,
+      "source": "corrected_metrics.json:overhead.per_configuration",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 6 tdml_reconstruction paired overhead mean",
+      "expected": 0.0,
+      "observed": 0.0,
+      "passed": true,
+      "source": "tables/overhead_per_seed.csv",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 6 tdml_reconstruction paired overhead sample SD",
+      "expected": 0.0,
+      "observed": 0.0,
+      "passed": true,
+      "source": "tables/overhead_per_seed.csv",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 1.4432899320127035e-14,
+      "check": "Figure 6 ours_without_commit_reveal paired overhead mean",
+      "expected": 1.5432614381151648,
+      "observed": 1.5432614381151792,
+      "passed": true,
+      "source": "tables/overhead_per_seed.csv",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 2.1760371282653068e-14,
+      "check": "Figure 6 ours_without_commit_reveal paired overhead sample SD",
+      "expected": 2.1945483370458745,
+      "observed": 2.1945483370458962,
+      "passed": true,
+      "source": "tables/overhead_per_seed.csv",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 7.105427357601002e-15,
+      "check": "Figure 6 ours_with_commit_reveal paired overhead mean",
+      "expected": 32.918651838949735,
+      "observed": 32.91865183894974,
+      "passed": true,
+      "source": "tables/overhead_per_seed.csv",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 9.769962616701378e-15,
+      "check": "Figure 6 ours_with_commit_reveal paired overhead sample SD",
+      "expected": 4.633529963278149,
+      "observed": 4.633529963278159,
+      "passed": true,
+      "source": "tables/overhead_per_seed.csv",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 6 commit_phase timing mean",
+      "expected": 1970.7039328912895,
+      "observed": 1970.7039328912895,
+      "passed": true,
+      "source": "corrected_metrics.json:overhead.standalone",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 6 commit_phase timing sample SD",
+      "expected": 53.065892615444945,
+      "observed": 53.065892615444945,
+      "passed": true,
+      "source": "corrected_metrics.json:overhead.standalone",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 6 full_commit_reveal timing mean",
+      "expected": 3896.83588941892,
+      "observed": 3896.83588941892,
+      "passed": true,
+      "source": "corrected_metrics.json:overhead.standalone",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 3.055333763768431e-13,
+      "check": "Figure 6 full_commit_reveal timing sample SD",
+      "expected": 46.59417640598098,
+      "observed": 46.59417640598129,
+      "passed": true,
+      "source": "corrected_metrics.json:overhead.standalone",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 6 kmeans_detection timing mean",
+      "expected": 17.383829752604168,
+      "observed": 17.383829752604168,
+      "passed": true,
+      "source": "corrected_metrics.json:overhead.standalone",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 2.6645352591003757e-15,
+      "check": "Figure 6 kmeans_detection timing sample SD",
+      "expected": 2.7081848369027974,
+      "observed": 2.7081848369027948,
+      "passed": true,
+      "source": "corrected_metrics.json:overhead.standalone",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 6 one_shot_krum_score_filter timing mean",
+      "expected": 21.58956614633401,
+      "observed": 21.58956614633401,
+      "passed": true,
+      "source": "corrected_metrics.json:overhead.standalone",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 4.440892098500626e-16,
+      "check": "Figure 6 one_shot_krum_score_filter timing sample SD",
+      "expected": 2.746425111804804,
+      "observed": 2.7464251118048035,
+      "passed": true,
+      "source": "corrected_metrics.json:overhead.standalone",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 6 softmax_aggregation timing mean",
+      "expected": 99.56329663594563,
+      "observed": 99.56329663594563,
+      "passed": true,
+      "source": "corrected_metrics.json:overhead.standalone",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 3.552713678800501e-15,
+      "check": "Figure 6 softmax_aggregation timing sample SD",
+      "expected": 13.912494763639614,
+      "observed": 13.912494763639618,
+      "passed": true,
+      "source": "corrected_metrics.json:overhead.standalone",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 6 topk_aggregation timing mean",
+      "expected": 74.06549428900082,
+      "observed": 74.06549428900082,
+      "passed": true,
+      "source": "corrected_metrics.json:overhead.standalone",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 1.7763568394002505e-15,
+      "check": "Figure 6 topk_aggregation timing sample SD",
+      "expected": 10.149856328271813,
+      "observed": 10.149856328271811,
+      "passed": true,
+      "source": "corrected_metrics.json:overhead.standalone",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 6 verify_phase timing mean",
+      "expected": 1970.7594660421212,
+      "observed": 1970.7594660421212,
+      "passed": true,
+      "source": "corrected_metrics.json:overhead.standalone",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 4.263256414560601e-14,
+      "check": "Figure 6 verify_phase timing sample SD",
+      "expected": 42.97556346133743,
+      "observed": 42.97556346133739,
+      "passed": true,
+      "source": "corrected_metrics.json:overhead.standalone",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 1.1102230246251565e-16,
+      "check": "Figure 11 K2 final_test_mean",
+      "expected": 0.8835999999999999,
+      "observed": 0.8836,
+      "passed": true,
+      "source": "corrected_metrics.json:pipeline",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 11 K2 final_test_sd",
+      "expected": 0.0035594943461115646,
+      "observed": 0.0035594943461115646,
+      "passed": true,
+      "source": "corrected_metrics.json:pipeline",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 11 K2 final3_samples_per_second_mean",
+      "expected": 5682.639815609383,
+      "observed": 5682.639815609383,
+      "passed": true,
+      "source": "corrected_metrics.json:pipeline",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 5.684341886080802e-14,
+      "check": "Figure 11 K2 final3_samples_per_second_sd",
+      "expected": 92.03469815167526,
+      "observed": 92.0346981516752,
+      "passed": true,
+      "source": "corrected_metrics.json:pipeline",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 11 K2 final3_epoch_time_mean",
+      "expected": 7.921690378700279,
+      "observed": 7.921690378700279,
+      "passed": true,
+      "source": "corrected_metrics.json:pipeline",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 11 K2 final3_epoch_time_sd",
+      "expected": 0.13026661536171444,
+      "observed": 0.13026661536171444,
+      "passed": true,
+      "source": "corrected_metrics.json:pipeline",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 1.1102230246251565e-16,
+      "check": "Figure 11 K4 final_test_mean",
+      "expected": 0.8835999999999999,
+      "observed": 0.8836,
+      "passed": true,
+      "source": "corrected_metrics.json:pipeline",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 11 K4 final_test_sd",
+      "expected": 0.0035594943461115646,
+      "observed": 0.0035594943461115646,
+      "passed": true,
+      "source": "corrected_metrics.json:pipeline",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 4.547473508864641e-13,
+      "check": "Figure 11 K4 final3_samples_per_second_mean",
+      "expected": 3073.6235248991497,
+      "observed": 3073.62352489915,
+      "passed": true,
+      "source": "corrected_metrics.json:pipeline",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 11 K4 final3_samples_per_second_sd",
+      "expected": 3.849104811976519,
+      "observed": 3.849104811976519,
+      "passed": true,
+      "source": "corrected_metrics.json:pipeline",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 1.7763568394002505e-15,
+      "check": "Figure 11 K4 final3_epoch_time_mean",
+      "expected": 14.64074214700506,
+      "observed": 14.640742147005058,
+      "passed": true,
+      "source": "corrected_metrics.json:pipeline",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 11 K4 final3_epoch_time_sd",
+      "expected": 0.018346663411066076,
+      "observed": 0.018346663411066076,
+      "passed": true,
+      "source": "corrected_metrics.json:pipeline",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 1.3877787807814457e-17,
+      "check": "Figure 7 zero_activation/none final mean",
+      "expected": 0.1,
+      "observed": 0.10000000000000002,
+      "passed": true,
+      "source": "corrected_metrics.json:activation",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 7 zero_activation/none mean TPR",
+      "expected": 0.0,
+      "observed": 0.0,
+      "passed": true,
+      "source": "corrected_metrics.json:activation",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 1.3877787807814457e-17,
+      "check": "Figure 7 zero_activation/activation_norm final mean",
+      "expected": 0.1,
+      "observed": 0.10000000000000002,
+      "passed": true,
+      "source": "corrected_metrics.json:activation",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 7 zero_activation/activation_norm mean TPR",
+      "expected": 1.0,
+      "observed": 1.0,
+      "passed": true,
+      "source": "corrected_metrics.json:activation",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 7 gaussian_activation/none final mean",
+      "expected": 0.6608,
+      "observed": 0.6608,
+      "passed": true,
+      "source": "corrected_metrics.json:activation",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 7 gaussian_activation/none mean TPR",
+      "expected": 0.0,
+      "observed": 0.0,
+      "passed": true,
+      "source": "corrected_metrics.json:activation",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 7 gaussian_activation/activation_norm final mean",
+      "expected": 0.6608,
+      "observed": 0.6608,
+      "passed": true,
+      "source": "corrected_metrics.json:activation",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 7 gaussian_activation/activation_norm mean TPR",
+      "expected": 1.0,
+      "observed": 1.0,
+      "passed": true,
+      "source": "corrected_metrics.json:activation",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 7 sign_flip/none final mean",
+      "expected": 0.6778000000000001,
+      "observed": 0.6778000000000001,
+      "passed": true,
+      "source": "corrected_metrics.json:activation",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 7 sign_flip/none mean TPR",
+      "expected": 0.0,
+      "observed": 0.0,
+      "passed": true,
+      "source": "corrected_metrics.json:activation",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 7 sign_flip/activation_norm final mean",
+      "expected": 0.6778000000000001,
+      "observed": 0.6778000000000001,
+      "passed": true,
+      "source": "corrected_metrics.json:activation",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 7 sign_flip/activation_norm mean TPR",
+      "expected": 1.0,
+      "observed": 1.0,
+      "passed": true,
+      "source": "corrected_metrics.json:activation",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 8 fastest-selector Gini",
+      "expected": 0.875,
+      "observed": 0.875,
+      "passed": true,
+      "source": "corrected_metrics.json:vrf",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 8 weighted-VRF five-trial mean Gini",
+      "expected": 0.11275000000000004,
+      "observed": 0.11275000000000004,
+      "passed": true,
+      "source": "corrected_metrics.json:vrf",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 8 weighted-VRF Gini sample SD",
+      "expected": 0.024001953045533587,
+      "observed": 0.024001953045533587,
+      "passed": true,
+      "source": "corrected_metrics.json:vrf",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": null,
+      "check": "Figure 8 weighted-VRF mean counts",
+      "expected": [
+        20.2,
+        22.2,
+        23.0,
+        24.8,
+        27.2,
+        27.2,
+        26.8,
+        28.6
+      ],
+      "observed": [
+        20.2,
+        22.2,
+        23.0,
+        24.8,
+        27.2,
+        27.2,
+        26.8,
+        28.6
+      ],
+      "passed": true,
+      "source": "corrected_metrics.json:vrf",
+      "tolerance": null
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 9 history row count",
+      "expected": 800,
+      "observed": 800,
+      "passed": true,
+      "source": "corrected_metrics.json:smart_contract",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 9 event row count",
+      "expected": 10,
+      "observed": 10,
+      "passed": true,
+      "source": "corrected_metrics.json:smart_contract",
+      "tolerance": 0.0
+    },
+    {
+      "absolute_difference": null,
+      "check": "Figure 9 evicted nodes",
+      "expected": [
+        2,
+        5
+      ],
+      "observed": [
+        2,
+        5
+      ],
+      "passed": true,
+      "source": "corrected_metrics.json:smart_contract",
+      "tolerance": null
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 10 K-means final-epoch accuracy",
+      "expected": 0.4361333333333333,
+      "observed": 0.4361333333333333,
+      "passed": true,
+      "source": "corrected_metrics.json:ablation_final",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 10 Krum final-epoch accuracy",
+      "expected": 0.49496666666666667,
+      "observed": 0.49496666666666667,
+      "passed": true,
+      "source": "corrected_metrics.json:ablation_final",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": 0.0,
+      "check": "Figure 10 Krum detection TPR",
+      "expected": 1.0,
+      "observed": 1.0,
+      "passed": true,
+      "source": "raw/param_shakti/full/logs/day3_gaussian_f2_krum_softmax_seed*.csv",
+      "tolerance": 1e-10
+    },
+    {
+      "absolute_difference": null,
+      "check": "Figure 10 K-means collapse status",
+      "expected": "collapsed",
+      "observed": "collapsed",
+      "passed": true,
+      "source": "raw/param_shakti/full/logs/day10_baseline_kmeans_topk_seed*.csv",
+      "tolerance": null
+    }
+  ],
+  "failed_check_count": 0,
+  "reporting_rules": {
+    "accuracy": "Final epoch unless explicitly described as validation-selected.",
+    "dispersion": "Sample standard deviation across the three seeds/trials where applicable.",
+    "pipeline_timing": "Mean of the final three epochs within each seed, then mean/sample SD across seeds.",
+    "vrf_gini": "Mean of five per-trial Gini values; Gini of the mean-count vector is retained only as a diagnostic."
+  },
+  "scope": "Independent numerical cross-check of all generator headline statistics, error bars, counts, and the eleven output artifacts. Curves and scatter points are drawn directly from the packaged authoritative raw CSVs."
+}

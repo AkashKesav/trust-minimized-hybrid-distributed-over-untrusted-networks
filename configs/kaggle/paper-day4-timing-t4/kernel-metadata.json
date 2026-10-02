@@ -1,0 +1,16 @@
+{
+  "id": "akashkesav/paper-day4-timing-t4",
+  "title": "Paper Day4 Timing T4",
+  "code_file": "day4_timing.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": ["gpu", "research"],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

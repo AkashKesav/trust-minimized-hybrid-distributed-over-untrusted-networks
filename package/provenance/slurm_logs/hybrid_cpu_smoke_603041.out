@@ -1,0 +1,15 @@
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+INITIAL_IDENTICAL_OK checksum=de7017a8b36446f0
+EPOCH 1 forward/backward + optimizer step OK
+EPOCH 1 validation OK accs=[0.15625, 0.15625]
+EPOCH 1 uniform aggregation + redistribution OK weights=[0.5, 0.5]
+EPOCH 1 softmax aggregation + redistribution OK weights=[0.5, 0.5]
+EPOCH 2 forward/backward + optimizer step OK
+EPOCH 2 validation OK accs=[0.09375, 0.09375]
+EPOCH 2 uniform aggregation + redistribution OK weights=[0.5, 0.5]
+EPOCH 2 softmax aggregation + redistribution OK weights=[0.5, 0.5]
+CHECKPOINT_ROUND_TRIP_OK
+HYBRID_CPU_SMOKE_PASS
+hybrid_cpu_smoke_complete=true

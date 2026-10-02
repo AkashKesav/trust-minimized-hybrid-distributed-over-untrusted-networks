@@ -1,0 +1,22 @@
+{
+  "checkpoint": "/scratch/mm24r002/paper_rerun_20260815/diagnostics/day6_zero_activation_activation_norm_seed42_latest.pt",
+  "epoch": 1,
+  "config_hash": "6464fc660a21f144",
+  "model": {
+    "name": "state_dict",
+    "tensor_count": 320,
+    "nonfinite_tensor_count": 0,
+    "nonfinite_value_count": 0,
+    "failures": []
+  },
+  "validation_best": {
+    "name": "best_state",
+    "tensor_count": 320,
+    "nonfinite_tensor_count": 0,
+    "nonfinite_value_count": 0,
+    "failures": []
+  },
+  "optimizer_nonfinite_tensor_count": 0,
+  "optimizer_failures": []
+}
+day6_checkpoint_inspection_complete=true

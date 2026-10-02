@@ -1,0 +1,202 @@
+{
+  "created_local": "2026-08-15T14:03:00+05:30",
+  "objective": "Architecture-matched paper reruns with checksum-gated download and cleanup",
+  "remote_run_root": "/scratch/mm24r002/paper_rerun_20260815",
+  "expected_final_matrix": {
+    "primary_csvs": 138,
+    "primary_rows": 10440,
+    "days": {
+      "1": 3,
+      "2": 18,
+      "3": 75,
+      "4": 3,
+      "5": 9,
+      "6": 21,
+      "7": 3,
+      "10": 6
+    },
+    "seeds": [42, 43, 44],
+    "model": "torchvision ResNet-50 standard 7x7/stride-2 stem and max-pool, CIFAR-10 head",
+    "model_parameter_count": 23528522
+  },
+  "deployed_artifacts": {
+    "bundle_sha256": "7abf7ef7e0d3d6288b374fcec5b50dd53d60dd3ce84f98f05c833b40e312bcbd",
+    "runner_sha256": "42ef8bdc7fc84c38f3082a3713d3072c08410e6fb41321454fa90bd42141b151",
+    "notebook_sha256": "dd00ec8ef4ccab28f5c6549a4faadd3f15dd5587d396e7da2f9bb7c12c7bbee9",
+    "validator_sha256": "7d8f592d651c4072521c62c385cc0ab80facf57db2a988c9aa01804efd7c806a",
+    "cifar10_archive_sha256": "6d958be074577803d12ecdefd02955f39262c83c16fe9348329d7fe0b5c001ce",
+    "slurm_launcher_sha256": {
+      "paper_single_gpu_bundles.sbatch": "1e3201bc59237b99b5140f4c48ae490a99a6ea54ee0abecd8b6ff65f1b7f10f6",
+      "paper_day5_k2_smoke.sbatch": "ec31a3c2c098c0e260ef490545fe28f7bca1cdc728c4286a9100ee663c4b7684",
+      "paper_day5_k2.sbatch": "b4762d7d52a280a62ca5d899fe189d82155de393d78d51f39e93cfa355e264f6",
+      "paper_day5_k4.sbatch": "07aa531f3f379db9290c7b316cc31c5ecc15a9e19f43f1711c9f781248060d9f",
+      "paper_day5_k8.sbatch": "990ae7b70303d38162d9eda35d10aee1b48c8de2b518d6427f65f66d76be3452"
+    },
+    "local_remote_hash_match_observed": "2026-08-15T16:03:00+05:30",
+    "notebook_runner_source_cells_identical": true
+  },
+  "kaggle_smoke": {
+    "purpose": "Diagnostic only; not accepted as manuscript training evidence",
+    "last_live_status_check": "2026-08-15T16:07:14+05:30",
+    "running_kernels": [],
+    "validation_tool": "paper_tools/validate_kaggle_smoke.py",
+    "validation_tool_sha256": "e4e66c6d43f1df75a49f1b45509e72c952b4d9d895fa37114e07cc18ba08129d",
+    "layer1": {
+      "slug": "akashkesav/paper-standard-stem-smoke-layer-1",
+      "version": 4,
+      "days": [1, 2, 3, 4, 10],
+      "status": "complete_validated",
+      "local_root": "kaggle_results/smoke_layer1_v4",
+      "config_hash": "8abd53a90eff7970",
+      "validation_report": "kaggle_results/smoke_layer1_v4/validation/validation_report.json",
+      "validation_report_sha256": "038ac92cf5794749ffb873cef2d42b3f26bba6a430c773f89e27eb1bcf83d332",
+      "sha256_manifest_sha256": "d4d247bf036dd0151a395096c93f374d66ffb2e06be336a59d4dffb9bfc2c32b",
+      "kernel_log_sha256": "114aa93705484e85344d597ad291c4b3bcf08e58a655b77c87c2bf84ed152835"
+    },
+    "layer2": {
+      "slug": "anosvol/paper-standard-stem-smoke-layer-2",
+      "version": 4,
+      "days": [6, 7],
+      "status": "complete_validated",
+      "local_root": "kaggle_results/smoke_layer2_v4",
+      "validation_report": "kaggle_results/smoke_layer2_v4/validation/validation_report.json",
+      "validation_report_sha256": "9cf31bf1ac1246a55018b2d51bddf10c82f258982c6ab9b04cbf5b4c9d64d920"
+    }
+  },
+  "slurm_jobs": {
+    "failed_smoke": {
+      "job_id": 602249,
+      "status": "failed",
+      "diagnostic_output": "results/failed_smoke_602249"
+    },
+    "cancelled_production_array": {
+      "job_id": 602255,
+      "status": "cancelled_after_dependency_never_satisfied"
+    },
+    "corrected_single_gpu_smoke": {
+      "job_id": 602509,
+      "status": "failed",
+      "failure": "mean-shift advanced-index assignment attempted a parameter-count-squared CUDA allocation",
+      "recovery_revision": "corrected_v5"
+    },
+    "corrected_single_gpu_production_array": {
+      "job_id": 602510,
+      "array": "0-7%8",
+      "dependency": "afterok:602509",
+      "status": "cancelled_after_dependency_never_satisfied"
+    },
+    "recovery_single_gpu_smoke": {
+      "job_id": 602538,
+      "revision": "corrected_v6",
+      "status": "complete_validated",
+      "started_remote": "2026-08-15T15:30:43+05:30",
+      "ended_remote": "2026-08-15T15:38:58+05:30",
+      "elapsed": "00:08:15",
+      "exit_code": "0:0",
+      "last_observed_phase": "complete",
+      "mean_shift_regression_passed": true,
+      "smoke_config_hash": "bd2f170afc1cc454",
+      "local_validation_report": "paramshakti_results/smoke_602538/validation/validation_report.json",
+      "validation_report_sha256": "c421f661cf205eee2099f00ea0af2468aa7e097551b79ef8bf7e3313bae213d7",
+      "sha256_manifest_sha256": "a0bc769b43c6df6c1e935c4d265c9a344be1ae4464f8134aea75c9173425a6c2"
+    },
+    "recovery_single_gpu_production_array": {
+      "job_id": 602539,
+      "array": "0-7%8",
+      "dependency": "afterok:602538",
+      "revision": "corrected_v6",
+      "status": "running_partial",
+      "production_config_hash": "7e267c0bf303542b",
+      "running_tasks": [0, 1],
+      "pending_tasks": [2, 3, 4, 5, 6, 7],
+      "last_observed_remote": "2026-08-15T16:16:12+05:30",
+      "task_progress": {
+        "0": {
+          "specification": 1,
+          "specification_count": 16,
+          "epoch": 135,
+          "epoch_count": 200,
+          "run": "day2_n2_softmax_seed42"
+        },
+        "1": {
+          "specification": 1,
+          "specification_count": 15,
+          "epoch": 25,
+          "epoch_count": 200,
+          "run": "day2_n2_softmax_seed43",
+          "node": "rsgpu004",
+          "gpu": "NVIDIA A100 80GB PCIe",
+          "started_remote": "2026-08-15T16:09:01+05:30"
+        }
+      },
+      "pending_start_estimate": "2026-08-15T17:35:16+05:30"
+    },
+    "day5_k2_smoke": {
+      "job_id": 602250,
+      "runner_revision_at_execution": "corrected_v6",
+      "status": "pending",
+      "pending_reason": "Priority",
+      "scheduler_start_estimate": "2026-08-16T19:59:21+05:30",
+      "requested_resources": "1 node, 2 tasks, 2 A100 GPUs",
+      "cached_launcher_note": "submitted before launcher-level CUBLAS export; corrected_v6 runner sets CUBLAS_WORKSPACE_CONFIG before importing PyTorch"
+    },
+    "day5_k2_production": {
+      "job_id": 602554,
+      "dependency": "afterok:602250",
+      "nodes": 1,
+      "gpus": 2,
+      "status": "pending_dependency",
+      "dependency_confirmed_unfulfilled": true
+    },
+    "day5_k4_production": {
+      "job_id": 602555,
+      "dependency": "afterok:602250",
+      "nodes": 2,
+      "gpus": 4,
+      "status": "pending_dependency",
+      "dependency_confirmed_unfulfilled": true
+    },
+    "day5_k8_production": {
+      "job_id": 602556,
+      "dependency": "afterok:602250",
+      "nodes": 4,
+      "gpus": 8,
+      "status": "pending_dependency",
+      "dependency_confirmed_unfulfilled": true
+    },
+    "deployed_runner_audit": {
+      "job_id": 602513,
+      "status": "completed",
+      "local_report": "paramshakti_results/diagnostics/deployed_runner_audit.json",
+      "report_sha256": "998a5e6a8a541669cd6981d121dba27f582a1cb0b0b512a015e81b76cafafa82"
+    }
+  },
+  "cleanup_gate": {
+    "delete_target": "/scratch/mm24r002/paper_rerun_20260815",
+    "finalizer": "paramshakti/finalize_download_cleanup.sh",
+    "finalizer_sha256": "d0baa55c3cf9b07470e1e7e304e1ead90e016a2e22ac866c71b169404919f607",
+    "background_watcher": {
+      "script": "paramshakti/watch_and_finalize.sh",
+      "sha256": "20b7ebf6f032ba7a2ad3dd59045192c081a422d808b2e7d87850266372e24828",
+      "tmux_session": "paramsakti-control",
+      "tmux_window": "finalizer-watch",
+      "started_local": "2026-08-15T16:18:06+05:30",
+      "poll_seconds": 300,
+      "status": "waiting_for_required_jobs"
+    },
+    "premature_run_refusal_test": {
+      "observed": "2026-08-15T16:10:00+05:30",
+      "exit_code": 4,
+      "passed": true
+    },
+    "delete_only_after": [
+      "all required Slurm jobs complete successfully",
+      "remote full validator passes the exact matrix",
+      "remote checksum manifest is generated",
+      "all accepted outputs and diagnostics are downloaded locally",
+      "local validator passes",
+      "every remote/local checksum matches"
+    ],
+    "authorized_broader_deletion": false
+  }
+}
