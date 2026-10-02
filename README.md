@@ -72,4 +72,4 @@ This repository intentionally contains the experimental launchers, configuration
 
 ## Contact
 
-Corresponding author: Ayush Saksena - asaksena100@gmail.com
+Corresponding author: Ayush Saksena [![LinkedIn](https://img.shields.io/badge/-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayush-saksena/) [![Portfolio](https://img.shields.io/badge/-000000?style=flat&logo=vercel&logoColor=white)](https://ayush-saksena.vercel.app/) [![GitHub](https://img.shields.io/badge/-181717?style=flat&logo=github&logoColor=white)](https://github.com/ayushsaksena30) [![Email](https://img.shields.io/badge/-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:asaksena100@gmail.com) — [asaksena100@gmail.com](mailto:asaksena100@gmail.com)
